@@ -14,14 +14,14 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   }
 }
 
-const HomePage: NextPage = () => {
+const InsightsPage: NextPage = () => {
   return (
     <TemplateDefault title="" description="">
       <h1>
-        <Trans>Página Inicial</Trans>
+        <Trans>Conteúdo</Trans>
       </h1>
     </TemplateDefault>
   )
 }
 
-export default HomePage
+export default InsightsPage

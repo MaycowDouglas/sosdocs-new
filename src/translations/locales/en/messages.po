@@ -34,7 +34,12 @@ msgstr ""
 msgid "Central de atendimento"
 msgstr ""
 
+#: src/pages/contact.tsx:21
+msgid "Contato"
+msgstr ""
+
 #: src/components/ui/organisms/Footer.tsx:124
+#: src/pages/insights.tsx:21
 msgid "Conteúdo"
 msgstr ""
 
@@ -75,6 +80,7 @@ msgid "Página Inicial"
 msgstr "Home Page"
 
 #: src/components/ui/organisms/Footer.tsx:62
+#: src/pages/about.tsx:21
 msgid "Sobre nós"
 msgstr ""
 
@@ -95,6 +101,7 @@ msgid "Tratamento Documental"
 msgstr ""
 
 #: src/components/ui/organisms/Footer.tsx:76
+#: src/pages/units.tsx:21
 msgid "Unidades"
 msgstr ""
 
