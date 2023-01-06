@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --font-family: 'sans-serif';
-
   --nprogress-bar-color: theme(colors.blue.700);
   --nprogress-spin-color: theme(colors.blue.700);
 
