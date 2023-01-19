@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --nprogress-bar-color: theme(colors.blue.700);
-  --nprogress-spin-color: theme(colors.blue.700);
+  --nprogress-bar-color: theme(colors.primary.200);
+  --nprogress-spin-color: theme(colors.primary.200);
 
   --scroll-width: 5px;
-  --scroll-color: theme(colors.blue.700);
+  --scroll-color: theme(colors.primary.200);
 }
 
 @import './fonts.css';
 @import './nprogress.css';
 
-::-webkit-scrollbar { width: var(--scroll-size); }
+::-webkit-scrollbar { width: var(--scroll-width); }
 ::-webkit-scrollbar-thumb { border-radius: 10px; background: var(--scroll-color); }
 

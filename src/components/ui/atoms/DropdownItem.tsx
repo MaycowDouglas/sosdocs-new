@@ -7,7 +7,7 @@ type Props = LiHTMLAttributes<HTMLLIElement> & {
 }
 
 export const DropdownItem = ({ hasBorder = false, children }: Props) => (
-  <li className={classNames('py-3', hasBorder ? 'border-b-2 border-neutral-150' : '')}>
+  <li className={classNames('py-3', hasBorder ? 'border-b-2 border-neutral-200' : '')}>
     {children}
   </li>
 )
