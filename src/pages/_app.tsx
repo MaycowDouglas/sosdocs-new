@@ -13,7 +13,7 @@ import { initTranslation } from '~/utils/lingui'
 //initialization function
 initTranslation(i18n)
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const locale = router.locale! || router.defaultLocale!
   const firstRender = useRef(true)

@@ -1,7 +1,11 @@
+import 'swiper/css'
+
 import { Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaPlus } from 'react-icons/fa'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { TemplateDefault } from '~/components/templates/Default'
 import { Container } from '~/components/ui/atoms/Container'
@@ -10,6 +14,9 @@ import { Heading } from '~/components/ui/atoms/Heading'
 import { MediaIcon, RocketIcon } from '~/components/ui/atoms/Icons'
 import { Line } from '~/components/ui/atoms/Line'
 import { Text } from '~/components/ui/atoms/Text'
+import useCertificates from '~/hooks/useCertificates'
+import useClients from '~/hooks/useClients'
+import useUnits from '~/hooks/useUnits'
 import BgHero from '~/public/images/backgrounds/bg-hero-about.png'
 import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
 import CoupleLookingTablet from '~/public/images/couple-looking-tablet.jpg'
@@ -28,6 +35,10 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 }
 
 const AboutPage: NextPage = () => {
+  const certificates = useCertificates()
+  const clients = useClients('private')
+  const units = useUnits()
+
   return (
     <TemplateDefault title="" description="">
       <section className="relative bg-primary-300">
@@ -163,26 +174,111 @@ const AboutPage: NextPage = () => {
         </Container>
       </section>
 
-      {/* <section>
-        <div className="container">
-          <div className="px-16">
+      <section>
+        <Container className="pb-20">
+          <Content>
             <div>
-              <div className="space-y-3 mb-7 text-center">
+              <div className="space-y-3 mb-7 md:mb-16 text-center">
                 <span className="inline-flex w-16 h-1 rounded-full bg-gradient-to-l from-secondary-100 to-secondary-500"></span>
-                <h2 className="text-6xl text-primary-300 font-semibold">
+                <Heading dark className="text-4xl md:text-6xl">
                   <Trans>Conheça nossa história</Trans>
-                </h2>
-                <p className="text-neutral-350 text-lg">
+                </Heading>
+                <Text color="darkMuted" className="md:text-lg">
                   <Trans>
                     Conheça os passos dados pela SOS Docs desde seu surgimento até hoje.
                   </Trans>
-                </p>
+                </Text>
+              </div>
+
+              <div className="space-y-10 md:-space-y-14">
+                <div className="flex justify-center md:justify-start">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      2011
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Fundamos a SOS Docs
+                    </Heading>
+                    <Text color="darkMuted">
+                      Com o propósito de oferecer serviços em Digitalização.
+                    </Text>
+                  </article>
+                </div>
+                <div className="flex justify-center md:justify-end">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      2012
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Tratamento arquivístico
+                    </Heading>
+                    <Text color="darkMuted">
+                      Entendemos que só a digitalização de documentos não era suficiente para
+                      atender ao mercado com a qualidade que esperamos.
+                    </Text>
+                  </article>
+                </div>
+                <div className="flex justify-center md:justify-start">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      2013
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Guarda de documentos e mídias
+                    </Heading>
+                    <Text color="darkMuted">
+                      Passamos a oferecer guarda de documentação física e em mídias de dados com
+                      segurança e praticidade.
+                    </Text>
+                  </article>
+                </div>
+                <div className="flex justify-center md:justify-end">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      2014
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Implantação ECM
+                    </Heading>
+                    <Text color="darkMuted">
+                      A necesidade de integrar mais tecnologia aos nossos serviços nos fez utilizar
+                      e oferecer ECM.
+                    </Text>
+                  </article>
+                </div>
+                <div className="flex justify-center md:justify-start">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      2016
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Gestão de processos docs (BPM)
+                    </Heading>
+                    <Text color="darkMuted">
+                      Percebemos que os processos internos dos clientes eram gargalos e focamos em
+                      resolver.
+                    </Text>
+                  </article>
+                </div>
+                <div className="flex justify-center md:justify-end">
+                  <article className="rounded-3xl shadow-lg p-8 max-w-xs xl:max-w-md">
+                    <span className="mb-3 inline-flex text-7xl text-primary-200 font-semibold uppercase">
+                      Hoje
+                    </span>
+                    <Heading dark className="text-lg leading-6 mb-2">
+                      Transformação digital
+                    </Heading>
+                    <Text color="darkMuted">
+                      Integramos novas tecnologias como OCR, assinatura digital, RPA, Inteligência
+                      Artificial.
+                    </Text>
+                  </article>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Content>
+        </Container>
       </section>
-      */}
 
       <section className="relative">
         <Image src={BgWeb} alt="" fill className="object-cover" />
@@ -260,9 +356,26 @@ const AboutPage: NextPage = () => {
       <section className="pt-14 pb-28">
         <Container>
           <Content>
-            <Heading dark className="text-4xl text-center">
+            <Heading dark className="text-4xl text-center mb-10">
               <Trans>Conheça nossas certificações:</Trans>
             </Heading>
+
+            {certificates.data && (
+              <Swiper spaceBetween={100} slidesPerView="auto">
+                {certificates.data.map((certificate, index) => (
+                  <SwiperSlide key={index} className="max-w-[125px] self-center">
+                    <div className="w-full h-20">
+                      <Image
+                        fill
+                        className="object-contain object-center"
+                        alt={certificate.title}
+                        src={certificate.featuredImage.node.sourceUrl}
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
           </Content>
         </Container>
       </section>
@@ -296,32 +409,86 @@ const AboutPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-      {/*<section className="pt-14 pb-28">
-        <div className="container">
-          <div className="px-16">
-            <div className="space-y-2 mb-7">
+      <section>
+        <Container className="py-20">
+          <Content>
+            <div className="space-y-2 mb-7 text-center md:text-left">
               <p className="text-xl text-primary-200 -mb-2">
                 <Trans>Quem confia</Trans>
               </p>
-              <h2 className="text-6xl text-primary-300 font-semibold">
+              <Heading dark className="text-4xl md:text-6xl">
                 <Trans>Nossos clientes</Trans>
-              </h2>
+              </Heading>
             </div>
-          </div>
-        </div>
-      </section>*/}
-      {/* <section className="pt-14 pb-28">
-        <div className="container">
-          <div className="px-16">
-            <div className="space-y-2 mb-7">
-              <span className="inline-flex w-16 h-1 rounded-full bg-gradient-to-r from-secondary-100 to-secondary-500"></span>
-              <h2 className="text-6xl text-primary-300 font-semibold">
+
+            {clients.data && (
+              <div className="grid md:grid-cols-4">
+                {clients.data.map((client, index) => (
+                  <div className="relative border border-neutral-350 p-14" key={index}>
+                    <div className="relative h-20">
+                      <Image
+                        fill
+                        className="object-contain object-center"
+                        src={client.brand.node.sourceUrl}
+                        alt={client.title}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </Content>
+        </Container>
+      </section>
+      <section>
+        <Container className="py-20">
+          <Content>
+            <div className="space-y-2 mb-7 md:mb-10">
+              <Line />
+              <Heading dark className="text-3xl md:text-6xl">
                 <Trans>Conheça nossas unidades</Trans>
-              </h2>
+              </Heading>
             </div>
-          </div>
-        </div>
-      </section> */}
+
+            {units.data && (
+              <div className="grid md:grid-cols-3 gap-20 md:px-20">
+                {units.data.map((unit, index) => (
+                  <article key={index}>
+                    <div className="relative w-full h-96">
+                      <div className="relative w-full h-full rounded-xl overflow-hidden shadow-xl">
+                        <Image
+                          fill
+                          className="object-cover object-center"
+                          alt={unit.title}
+                          src={unit.featuredImage.node.sourceUrl}
+                        />
+                      </div>
+                      <Link
+                        href={`/units/${unit.title
+                          .normalize('NFD')
+                          .replaceAll(' ', '-')
+                          .replace(/[\u0300-\u036f]/g, '')
+                          .toLocaleLowerCase()}`}
+                        className="z-0 absolute -bottom-6 left-1/2 -translate-x-1/2 p-5 rounded-full bg-white hover:bg-secondary-200 transition-all"
+                      >
+                        <FaPlus />
+                      </Link>
+                    </div>
+                    <div className="text-center mt-10">
+                      <Heading dark className="text-3xl">
+                        {unit.state}
+                      </Heading>
+                      <Text color="darkMuted" className="text-xl">
+                        {unit.city}
+                      </Text>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
+          </Content>
+        </Container>
+      </section>
     </TemplateDefault>
   )
 }

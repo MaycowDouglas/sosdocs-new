@@ -1,9 +1,12 @@
+import 'swiper/css'
+
 import { t, Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
 import { FaAngleDoubleRight } from 'react-icons/fa'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { TemplateDefault } from '~/components/templates/Default'
 import { Container } from '~/components/ui/atoms/Container'
@@ -21,6 +24,7 @@ import { Text } from '~/components/ui/atoms/Text'
 import { SolutionCard } from '~/components/ui/molecules/SolutionCard'
 import { Cta } from '~/components/ui/organisms/Cta'
 import useClients from '~/hooks/useClients'
+import BgClients from '~/public/images/backgrounds/bg-clients.jpg'
 import BgHero from '~/public/images/backgrounds/bg-hero.jpg'
 import BgStorage from '~/public/images/backgrounds/bg-storage.jpg'
 import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
@@ -38,10 +42,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 }
 
 const IndexPage: NextPage = () => {
-  const publicClients = useClients('public')
-
-  console.log(publicClients)
-
+  const clients = useClients('public')
   return (
     <TemplateDefault title="" description="">
       <main className="relative">
@@ -210,28 +211,32 @@ const IndexPage: NextPage = () => {
       </section>
 
       <section className="relative bg-primary-300">
-        <Container className="py-20">
+        <Image src={BgClients} alt="" fill className="object-cover object-center" />
+        <Container className="pt-20 pb-28">
           <Content>
-            <div className="space-y-2 lg:w-5/12 xl:w-6/12">
+            <div className="space-y-2 lg:w-5/12 xl:w-6/12 mb-16">
               <Line />
               <Heading className="text-3xl md:text-4xl">
                 <Trans>Empresas líderes no mercado confiam na SOS Docs</Trans>
               </Heading>
             </div>
 
-            {!publicClients.isLoading && (
-              <div className="grid grid-cols-4 mt-5">
-                {publicClients.clients.data.clients.edges.map((client: any, index: number) => (
-                  <div key={index}>
-                    <Image
-                      src={client.node.brand.node.sourceUrl}
-                      alt={client.node.title}
-                      width={150}
-                      height={90}
-                    />
-                  </div>
+            {clients.data && (
+              <Swiper spaceBetween={0} slidesPerView="auto">
+                {clients.data.map((client, index) => (
+                  <SwiperSlide key={index} className="max-w-[280px]">
+                    <div className="flex justify-center items-center">
+                      <Image
+                        src={client.brand.node.sourceUrl}
+                        alt={client.title}
+                        width={150}
+                        height={90}
+                        className="w-auto h-[70px]"
+                      />
+                    </div>
+                  </SwiperSlide>
                 ))}
-              </div>
+              </Swiper>
             )}
           </Content>
         </Container>

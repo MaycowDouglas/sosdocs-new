@@ -6,7 +6,7 @@
   --nprogress-bar-color: theme(colors.primary.200);
   --nprogress-spin-color: theme(colors.primary.200);
 
-  --scroll-width: 5px;
+  --scroll-width: 7px;
   --scroll-color: theme(colors.primary.200);
 }
 
@@ -15,4 +15,3 @@
 
 ::-webkit-scrollbar { width: var(--scroll-width); }
 ::-webkit-scrollbar-thumb { border-radius: 10px; background: var(--scroll-color); }
-

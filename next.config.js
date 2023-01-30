@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'sosdocs.com.br',
       },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
     ],
   },
 
