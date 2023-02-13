@@ -74,24 +74,24 @@ export const Navbar = ({ active = false }: Props) => {
               </NavbarLink>
             </NavbarItem>
             <NavbarItem className="md:hidden">
-              <NavbarLink href="/" as="/" isActive={pathname === '/about'}>
+              <NavbarLink href="/about" as={t`/sobre-nos`} isActive={pathname === '/about'}>
                 <Trans>Sobre nós</Trans>
               </NavbarLink>
             </NavbarItem>
-            <NavbarItem className="md:hidden">
+            {/* <NavbarItem className="md:hidden">
               <NavbarLink href="/" as="/" isActive={pathname === '/solutions'}>
                 <Trans>Soluções</Trans>
               </NavbarLink>
-            </NavbarItem>
-            <NavbarItem className="group hidden md:inline-flex">
+            </NavbarItem> */}
+            <NavbarItem className="group hidden md:inline-flex group">
               <span
                 className={classNames(
-                  pathname === '/about' ? 'font-bold' : 'font-normal',
+                  pathname === t`/sobre-nos` ? 'font-bold' : 'font-normal',
                   'relative inline-flex items-center gap-2 cursor-pointer'
                 )}
                 onClick={() => handleToggleMenu('about')}
               >
-                {pathname === '/about' && (
+                {pathname === t`/sobre-nos` && (
                   <svg
                     className="absolute -top-1 right-6 w-6 h-1 fill-none"
                     viewBox="0 0 24 3"
@@ -113,44 +113,46 @@ export const Navbar = ({ active = false }: Props) => {
               </span>
               <span
                 className={classNames(
-                  '-z-20 absolute top-14 left-5 right-5 grid grid-cols-12',
-                  'rounded-b-xl bg-white overflow-hidden transition duration-1000 ease-in-out',
-                  showAboutMenu ? 'opacity-100' : '-translate-y-[200%] opacity-0'
+                  'z-0 absolute top-10 left-5 right-5 grid grid-cols-12 h-0 group-hover:h-auto hover:h-auto pt-4',
+                  'rounded-b-xl bg-transparent overflow-hidden'
                 )}
               >
                 <span className="text-left bg-neutral-200 p-20 col-span-5">
                   <Heading dark tag="h2" className="text-3xl">
-                    Conheça nossa história
+                    <Trans>Conheça nossa história</Trans>
                   </Heading>
                   <Text color="darkMuted" className="mt-3 mb-5">
-                    Conheça os passos dados pela SOS Docs desde seu surgimento até hoje.
+                    <Trans>
+                      Conheça os passos dados pela SOS Docs desde seu surgimento até hoje.
+                    </Trans>
                   </Text>
 
                   <Link
                     href="/about"
+                    as={t`/sobre-nos`}
                     className="px-6 py-3 inline-flex items-center justify-center border-2 border-secondary-200 rounded-full bg-transparent text-primary-300"
                   >
-                    Conhecer a SOS Docs
+                    <Trans>Conhecer a SOS Docs</Trans>
                   </Link>
                 </span>
 
-                <span className="grid grid-cols-4 place-content-center col-span-7 p-20">
-                  <Link href="">
+                <span className="grid grid-cols-4 place-content-center col-span-7 p-20 bg-white">
+                  <Link href="/about#our-history" as={t`/sobre-nos#nossa-historia`}>
                     <IconText icon={<MediaIcon />} text={t`Nossa história`} />
                   </Link>
-                  <Link href="">
+                  <Link href="/about#cases" as={t`/sobre-nos#cases`}>
                     <IconText icon={<MediaIcon />} text={t`Cases`} />
                   </Link>
-                  <Link href="">
+                  <Link href="/about#units" as={t`/sobre-nos#unidades`}>
                     <IconText icon={<MediaIcon />} text={t`Unidades`} />
                   </Link>
-                  <Link href="">
+                  <Link href="/about#work-with-us" as={t`/sobre-nos#trabalhe-conosco`}>
                     <IconText icon={<MediaIcon />} text={t`Trabalhe conosco`} />
                   </Link>
                 </span>
               </span>
             </NavbarItem>
-            <NavbarItem className="group hidden md:inline-flex">
+            {/* <NavbarItem className="group hidden md:inline-flex">
               <span
                 className={classNames(
                   pathname === '/solutions' ? 'font-bold' : 'font-normal',
@@ -218,7 +220,7 @@ export const Navbar = ({ active = false }: Props) => {
                   </Link>
                 </span>
               </span>
-            </NavbarItem>
+            </NavbarItem> */}
             <NavbarItem>
               <NavbarLink href="/insights" as={t`/conteudo`} isActive={pathname === '/insights'}>
                 <Trans>Conteúdo</Trans>
@@ -232,11 +234,11 @@ export const Navbar = ({ active = false }: Props) => {
           </ul>
 
           <a
-            href="http://"
+            href="https://docz.sosdocs.com.br/Docz/login"
             target="_blank"
             rel="noopener noreferrer"
             className={classNames(
-              'inline-flex items-center gap-2 px-9 py-2 mt-2 lg:mt-0 rounded-full bg-neutral-250 shadow transition-all'
+              'inline-flex items-center gap-2 px-9 py-2 mt-2 lg:mt-0 rounded-full bg-primary-415 shadow transition-all'
             )}
           >
             <Trans>Área do cliente</Trans>

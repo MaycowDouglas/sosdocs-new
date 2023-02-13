@@ -86,7 +86,7 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div>
+              {/* <div>
                 <h2 className="mb-3 font-bold">
                   <Trans>Soluções</Trans>
                 </h2>
@@ -118,7 +118,7 @@ export const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <h2 className="mb-3 font-bold">
                   <Trans>Conteúdo</Trans>

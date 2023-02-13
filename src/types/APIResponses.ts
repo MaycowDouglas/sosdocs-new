@@ -5,7 +5,10 @@ type Debug = {
 
 export type Client = {
   title: string
-  brand: {
+  categories: {
+    nodes: string[]
+  }
+  featuredImage: {
     node: {
       sourceUrl: string
     }

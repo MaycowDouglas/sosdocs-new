@@ -10,6 +10,10 @@
   --scroll-color: theme(colors.primary.200);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import './fonts.css';
 @import './nprogress.css';
 

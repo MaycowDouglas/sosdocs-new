@@ -2,6 +2,7 @@ import { t, Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { FaChevronRight } from 'react-icons/fa'
 
 import { TemplateDefault } from '~/components/templates/Default'
@@ -13,7 +14,7 @@ import { Text } from '~/components/ui/atoms/Text'
 import { Cta } from '~/components/ui/organisms/Cta'
 import usePosts from '~/hooks/usePosts'
 import BgKeyboard from '~/public/images/backgrounds/bg-keyboard.jpg'
-import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
+import { classNames } from '~/utils'
 import { loadTranslation } from '~/utils/lingui'
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
@@ -28,6 +29,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 const InsightsPage: NextPage = () => {
   const posts = usePosts()
+
+  const [showAllPosts, setShowAllPosts] = useState(false)
 
   return (
     <TemplateDefault title="" description="">
@@ -53,7 +56,7 @@ const InsightsPage: NextPage = () => {
             <Content>
               <div>
                 <article className="grid grid-cols-3 gap-10 items-center">
-                  <div className="relative col-span-2 h-80">
+                  <div className="relative col-span-2 h-80 rounded-2xl overflow-hidden">
                     <Image
                       fill
                       className="object-cover object-center"
@@ -84,8 +87,14 @@ const InsightsPage: NextPage = () => {
                 {posts.data.map((post, index) => {
                   if (index >= 1) {
                     return (
-                      <article key={index}>
-                        <div className="relative w-full h-52">
+                      <article
+                        key={index}
+                        className={classNames(
+                          'border-2 rounded-2xl border-neutral-200 hover:border-secondary-100 cursor-pointer',
+                          !showAllPosts && index > 3 ? 'hidden' : ''
+                        )}
+                      >
+                        <div className="relative w-full h-52 rounded-2xl overflow-hidden">
                           <Image
                             fill
                             className="object-cover object-center"
@@ -98,11 +107,15 @@ const InsightsPage: NextPage = () => {
                           />
                         </div>
                         <div className="p-7">
-                          <Heading dark className="text-xl mb-3">
+                          <Heading dark className="mb-3">
                             {post.title}
                           </Heading>
-                          <Text color="darkMuted">
-                            {post.content?.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 115)}...
+                          <Text
+                            color="darkMuted"
+                            className="text-sm"
+                            title={post.content?.replace(/<\/?[^>]+(>|$)/g, '')}
+                          >
+                            {post.content?.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 60)}...
                           </Text>
                           <Link
                             href=""
@@ -118,6 +131,16 @@ const InsightsPage: NextPage = () => {
                   }
                 })}
               </div>
+              {!showAllPosts && (
+                <div className="text-center pt-5">
+                  <button
+                    onClick={() => setShowAllPosts(true)}
+                    className="inline-flex justify-center items-center px-8 py-3 bg-primary-200 text-white rounded-full"
+                  >
+                    Ver todos
+                  </button>
+                </div>
+              )}
             </Content>
           </Container>
         </section>
@@ -126,8 +149,7 @@ const InsightsPage: NextPage = () => {
       <Cta
         href=""
         title={t`Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio`}
-        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com
-        velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
+        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
         call={t`Conheça a SOS Docs`}
       />
     </TemplateDefault>

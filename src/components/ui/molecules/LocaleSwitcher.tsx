@@ -46,9 +46,7 @@ export default function LocaleSwitcher() {
         <span className="w-5">
           <Image src={flags[activeLocale!]} alt="" />
         </span>
-        <span>
-          {languages[activeLocale!]} <span>({countries[activeLocale!]})</span>
-        </span>
+        <span>{languages[activeLocale!]}</span>
         <FiChevronDown strokeWidth={3} />
       </button>
       <DropdownMenu isOpen={isOpen}>

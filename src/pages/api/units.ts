@@ -17,7 +17,6 @@ export default async function unitsRoute(req: NextApiRequest, res: NextApiRespon
               title
               state
               city
-              content
               featuredImage {
                 node {
                   sourceUrl

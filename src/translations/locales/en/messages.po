@@ -13,555 +13,587 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/pages/about.tsx:79
+msgid "+ de 100 clientes"
+msgstr "+ than 100 customers"
+
 #: src/components/ui/organisms/Footer.tsx:30
 #: src/components/ui/organisms/Header.tsx:7
 msgid "+55 0800 591 1478"
 msgstr "+55 0800 591 1478"
 
-#: src/components/ui/organisms/Navbar.tsx:99
+#: src/components/ui/organisms/Navbar.tsx:230
 msgid "/contato"
 msgstr "/contact"
 
-#: src/components/ui/organisms/Navbar.tsx:87
+#: src/components/ui/organisms/Navbar.tsx:225
 msgid "/conteudo"
 msgstr "/insights"
 
-#: src/components/ui/organisms/Navbar.tsx:63
+#: src/components/ui/organisms/Navbar.tsx:77
+#: src/components/ui/organisms/Navbar.tsx:89
+#: src/components/ui/organisms/Navbar.tsx:94
+#: src/components/ui/organisms/Navbar.tsx:132
 msgid "/sobre-nos"
-msgstr "/about"
+msgstr "/about-us"
 
-#: src/components/ui/organisms/Navbar.tsx:75
-msgid "/solucoes"
-msgstr "/solutions"
+#: src/components/ui/organisms/Navbar.tsx:143
+msgid "/sobre-nos#cases"
+msgstr "/about-us#cases"
 
-#: src/pages/about.tsx:43
+#: src/components/ui/organisms/Navbar.tsx:140
+msgid "/sobre-nos#nossa-historia"
+msgstr "/about-us#our-history"
+
+#: src/components/ui/organisms/Navbar.tsx:149
+msgid "/sobre-nos#trabalhe-conosco"
+msgstr "/about-us#our-history"
+
+#: src/components/ui/organisms/Navbar.tsx:146
+msgid "/sobre-nos#unidades"
+msgstr "/about-us#units"
+
+#: src/pages/about.tsx:122
 msgid "A SOS Docs foi fundada em 2011 com o propósito de oferecer serviços relacionados à Tecnologia e Gestão da Informação."
 msgstr "SOS Docs was founded in 2011 with the purpose of offering services related to Information Technology and Management."
 
-#: src/pages/home.tsx:162
-#: src/pages/index.tsx:162
+#: src/pages/index.tsx:171
 msgid "A melhor solução para o seu negócio"
-msgstr ""
+msgstr "The best solution for your business"
 
-#: src/pages/about.tsx:170
+#: src/pages/about.tsx:336
 msgid "A transformação começa por nós;"
-msgstr ""
+msgstr "The transformation starts with us;"
 
-#: src/pages/home.tsx:105
-#: src/pages/index.tsx:110
+#: src/pages/index.tsx:119
 msgid "Acelerar o processo de transformação de pessoas e informações é o nosso propósito"
-msgstr ""
+msgstr "Accelerating the process of transforming people and information is our purpose"
 
-#: src/pages/units.tsx:142
+#: src/pages/units.tsx:151
 msgid "Acesso restrito a área de armazenamento por biometria;"
-msgstr ""
+msgstr "Restricted access to the storage area by biometrics;"
 
-#: src/pages/docz.tsx:124
+#: src/pages/docz.tsx:147
 msgid "Acompanhamento e gerenciamento das solicitações"
-msgstr ""
+msgstr "Follow-up and management of requests"
 
-#: src/pages/docz.tsx:94
+#: src/pages/docz.tsx:117
 msgid "Acompanhe em tempo real seus documentos, faça solicitações, confira status e/ou prioridades"
-msgstr ""
+msgstr "Track your documents in real time, make requests, check status and/or priorities"
 
-#: src/pages/docz.tsx:127
+#: src/pages/docz.tsx:150
 msgid "Acompanhe o andamento e gerencie suas solicitações na palma da sua mão, com a facilidade que você merece."
-msgstr ""
+msgstr "Track progress and manage your requests in the palm of your hand, with the ease you deserve."
+
+#: src/pages/index.tsx:102
+msgid "Atas de Registro"
+msgstr "Minutes of Registration"
 
 #: src/components/ui/organisms/Footer.tsx:130
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
-#: src/pages/units.tsx:70
+#: src/pages/units.tsx:79
 msgid "Bombeiro Civil;"
-msgstr ""
+msgstr "Civil firefighter;"
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:31
 msgid "Brasil"
 msgstr "Brazil"
 
-#: src/pages/units.tsx:82
+#: src/pages/units.tsx:91
 msgid "CFTV – Câmeras de circuito interno;"
-msgstr ""
+msgstr "Internal circuit cameras;"
 
+#: src/components/ui/molecules/NavbarDropdown.tsx:23
 #: src/components/ui/organisms/Footer.tsx:69
+#: src/components/ui/organisms/Navbar.tsx:144
 msgid "Cases"
-msgstr ""
+msgstr "Cases"
 
 #: src/components/ui/organisms/Footer.tsx:22
 msgid "Central de atendimento"
-msgstr ""
+msgstr "Call center"
 
-#: src/pages/units.tsx:61
+#: src/pages/units.tsx:70
 msgid "Certificações de acordo com a legislação vigente;"
-msgstr ""
+msgstr "Certifications in accordance with current legislation;"
 
-#: src/pages/about.tsx:49
+#: src/pages/about.tsx:128
 msgid "Com o passar dos anos, buscando realizar serviços de qualidade e eficiência, a SOS Docs vem aumentando sua base de clientes de maneira sólida, constante e em sintonia com as atualizações de produtos e tecnologia. Conta atualmente com mais de 500 colaboradores e operação em todo Brasil e no Paraguai, além da sua capacidade aprovada por mais de 100 clientes."
-msgstr ""
+msgstr "Over the years, seeking to provide quality and efficient services, SOS Docs has been increasing its customer base in a solid, constant manner and in line with product and technology updates. It currently has more than 500 employees and operations throughout Brazil and Paraguay, in addition to its capacity approved by more than 100 customers."
 
-#: src/pages/home.tsx:132
-#: src/pages/index.tsx:136
+#: src/pages/index.tsx:145
 msgid "Com soluções eficientes, auxiliamos os nossos clientes a reduzir custos de armazenagem de documentos, reduzir riscos, cumprir os prazos de legislações vigentes e utilizar as suas informações de forma rápida e segura, garantindo a sua disponibilidade."
-msgstr ""
+msgstr "With efficient solutions, we help our customers to reduce document storage costs, reduce risks, meet the deadlines of current legislation and use their information quickly and safely, guaranteeing its availability."
 
-#: src/pages/docz.tsx:102
+#: src/pages/docz.tsx:125
 msgid "Configuração do projeto"
-msgstr ""
+msgstr "Project setup"
 
-#: src/pages/home.tsx:89
-msgid "Conhecer soluções"
-msgstr ""
+#: src/components/ui/organisms/Navbar.tsx:135
+msgid "Conhecer a SOS Docs"
+msgstr "Discover SOS Docs"
 
-#: src/pages/home.tsx:143
-#: src/pages/home.tsx:312
-#: src/pages/index.tsx:147
-#: src/pages/index.tsx:212
-#: src/pages/insights.tsx:52
-#: src/pages/units.tsx:167
+#: src/pages/docz.tsx:214
+#: src/pages/index.tsx:156
+#: src/pages/index.tsx:252
+#: src/pages/insights.tsx:153
+#: src/pages/units.tsx:165
 msgid "Conheça a SOS Docs"
-msgstr ""
+msgstr "Get to know SOS Docs"
 
-#: src/pages/home.tsx:116
-#: src/pages/index.tsx:121
+#: src/pages/index.tsx:130
 msgid "Conheça abaixo os serviços que oferecemos, nossos produtos e casos de sucesso."
-msgstr ""
+msgstr "Discover below the services we offer, our products and success stories."
 
-#: src/pages/docz.tsx:210
-msgid "Conheça algumas das empresas que usam nossas soluções:"
-msgstr ""
-
-#: src/pages/about.tsx:104
+#: src/components/ui/organisms/Navbar.tsx:122
+#: src/pages/about.tsx:184
 msgid "Conheça nossa história"
-msgstr ""
+msgstr "Know our history"
 
-#: src/pages/about.tsx:192
+#: src/pages/about.tsx:358
 msgid "Conheça nossas certificações:"
-msgstr ""
+msgstr "Discover our certifications:"
 
-#: src/pages/about.tsx:247
-#: src/pages/units.tsx:34
+#: src/pages/about.tsx:447
+#: src/pages/units.tsx:43
 msgid "Conheça nossas unidades"
-msgstr ""
+msgstr "Discover our units"
 
-#: src/pages/about.tsx:107
+#: src/components/ui/organisms/Navbar.tsx:125
+#: src/pages/about.tsx:187
 msgid "Conheça os passos dados pela SOS Docs desde seu surgimento até hoje."
-msgstr ""
+msgstr "Get to know the steps taken by SOS Docs since its inception until today."
 
-#: src/pages/contact.tsx:21
+#: src/components/ui/organisms/Navbar.tsx:231
 msgid "Contato"
-msgstr ""
+msgstr "Contact"
 
 #: src/components/ui/organisms/Footer.tsx:124
+#: src/components/ui/organisms/Navbar.tsx:226
+#: src/pages/insights.tsx:47
 msgid "Conteúdo"
-msgstr ""
+msgstr "Content"
 
-#: src/pages/units.tsx:145
+#: src/pages/units.tsx:154
 msgid "Contingência por geradores e nobreaks."
-msgstr ""
-
-#: src/pages/units.tsx:67
-msgid "Controle de pragas;"
-msgstr ""
-
-#: src/pages/index.tsx:192
-msgid ""
-"Desenvolvemos soluções customizadas para o seu negocio aplicando a metodo-\n"
-"logia de ondas."
-msgstr ""
-
-#: src/pages/home.tsx:230
-msgid "Desenvolvemos soluções customizadas para o seu negocio aplicando a metodo- logia de ondas."
-msgstr ""
-
-#: src/pages/home.tsx:56
-#: src/pages/index.tsx:62
-#: src/pages/index.tsx:83
-msgid "Desenvolvemos soluções customizadas para o seu negocio."
-msgstr ""
+msgstr "Contingency for generators and UPS."
 
 #: src/pages/units.tsx:76
+msgid "Controle de pragas;"
+msgstr "Pest control;"
+
+#: src/pages/index.tsx:199
+msgid "Desenvolvemos soluções customizadas para o seu negocio aplicando a metodologia de ondas."
+msgstr "We develop customized solutions for your business by applying the wave methodology."
+
+#: src/pages/index.tsx:69
+msgid "Desenvolvemos soluções customizadas para o seu negocio."
+msgstr "We develop customized solutions for your business."
+
+#: src/pages/units.tsx:85
 msgid "Detector de intrusos com alarmes;"
-msgstr ""
+msgstr "Intrusion detector with alarms;"
 
-#: src/pages/docz.tsx:116
+#: src/pages/docz.tsx:139
 msgid "Dê adeus às impressões, com o atendimento via Ordem de Serviço Digital você resolve tudo o que precisa de forma digital."
+msgstr "Say goodbye to prints, with the service via Digital Service Order you solve everything you need digitally."
+
+#: src/pages/contact.tsx:78
+msgid "Email Corporativo*"
 msgstr ""
 
-#: src/pages/home.tsx:272
+#: src/pages/index.tsx:219
 msgid "Empresas líderes no mercado confiam na SOS Docs"
+msgstr "Leading companies in the market trust SOS Docs"
+
+#: src/pages/contact.tsx:111
+msgid "Entrar em contato"
 msgstr ""
 
-#: src/pages/docz.tsx:165
+#: src/pages/docz.tsx:188
 msgid "Entre em contato com o setor de vendas para obter uma demonstração mais detalhada"
-msgstr ""
+msgstr "Contact sales for a more detailed demo"
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:24
 msgid "Espanhol"
 msgstr "Spanish"
 
-#: src/pages/docz.tsx:189
+#: src/components/ui/organisms/Lgpd.tsx:33
 msgid "Esta Lei (Lei Nº 13. 709) dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural."
-msgstr ""
+msgstr "This Law (Law No. 13.709) provides for the processing of personal data, including in digital media, by a natural person or by a public or private legal entity, with the aim of protecting the fundamental rights of freedom and privacy and the free development of the personality of the natural person."
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:29
 msgid "Estados Unidos"
 msgstr "United States"
 
-#: src/pages/units.tsx:64
+#: src/pages/about.tsx:65
+msgid "Estamos preparados para atender em todo o Brasil. Temos unidades para Guarda e Tratamento documental nos seguintes estados: Rio de Janeiro; São Paulo; Espírito Santo; Bahia e no Distrito Federal."
+msgstr "We are prepared to serve all over Brazil. We have units for custody and document processing in the following states: Rio de Janeiro; São Paulo; Holy Spirit; Bahia and the Federal District."
+
+#: src/pages/about.tsx:62
+msgid "Estamos presentes em todo o Brasil e no Paraguai"
+msgstr "We are present throughout Brazil and Paraguay"
+
+#: src/pages/units.tsx:73
 msgid "Estantes em aço;"
-msgstr ""
+msgstr "Steel shelves;"
 
-#: src/pages/home.tsx:43
-#: src/pages/index.tsx:49
+#: src/pages/index.tsx:56
 msgid "Estrutura, sistemas e equipes altamente capacitadas para atender a sua empresa!"
-msgstr ""
+msgstr "Structure, systems and highly qualified teams to serve your company!"
 
-#: src/pages/index.tsx:178
-msgid ""
-"Estrutura, sistemas e equipes altamente capacitadas para realizar a guarda de\n"
-"documentos da sua empresa."
-msgstr ""
-
-#: src/pages/home.tsx:186
+#: src/pages/index.tsx:187
 msgid "Estrutura, sistemas e equipes altamente capacitadas para realizar a guarda de documentos da sua empresa."
-msgstr ""
+msgstr "Structure, systems and highly qualified teams to safeguard your company's documents."
 
-#: src/pages/about.tsx:133
+#: src/pages/about.tsx:299
 msgid "Evoluir diariamente de acordo com as tecnologias de mercado, proporcionando aos nossos clientes satisfação na implantação de todo processo da gestão documental e guarda de documentos."
-msgstr ""
+msgstr "Evolve daily according to market technologies, providing our customers with satisfaction in the implementation of the entire process of document management and document storage."
 
-#: src/pages/docz.tsx:105
+#: src/pages/docz.tsx:128
 msgid "Faça projetos personalizados para cada cliente, configurando tudo do seu jeito. Mil e uma funções é pouco para o DocZ."
-msgstr ""
+msgstr "Make custom projects for each client, configuring everything your way. A thousand and one functions is not enough for DocZ."
 
-#: src/pages/docz.tsx:138
+#: src/pages/docz.tsx:161
 msgid "Gere relatórios, tenha o controle do seu acervo e de objetos dentro do DocZ."
-msgstr ""
+msgstr "Generate reports, take control of your collection and objects within DocZ."
 
-#: src/pages/home.tsx:79
+#: src/pages/index.tsx:92
 msgid "Gestão pública eficiente, transparente e digital!"
-msgstr ""
+msgstr "Efficient, transparent and digital public management!"
 
-#: src/components/ui/organisms/Footer.tsx:97
-#: src/pages/home.tsx:182
-#: src/pages/index.tsx:177
+#: src/pages/index.tsx:186
 msgid "Guarda de documentos e mídias"
-msgstr ""
+msgstr "Storage of documents and media"
 
-#: src/pages/home.tsx:167
-#: src/pages/index.tsx:167
+#: src/components/ui/organisms/Navbar.tsx:73
+msgid "Home"
+msgstr "Home"
+
+#: src/pages/index.tsx:176
 msgid "Implemente processos tecnológicos à gestão da informação no seu negócio."
-msgstr ""
+msgstr "Implement technological processes for information management in your business."
 
-#: src/pages/units.tsx:50
+#: src/pages/units.tsx:59
 msgid "Infraestrutura"
-msgstr ""
+msgstr "Infrastructure"
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:23
 msgid "Inglês"
 msgstr "English"
 
-#: src/pages/insights.tsx:31
-msgid "Insights"
-msgstr ""
-
 #: src/components/ui/organisms/Footer.tsx:56
 msgid "Institucional"
-msgstr ""
+msgstr "Institutional"
 
-#: src/pages/index.tsx:198
+#: src/pages/index.tsx:204
 msgid "LGPD"
-msgstr ""
+msgstr "LGPD"
 
-#: src/pages/docz.tsx:84
+#: src/pages/insights.tsx:79
+#: src/pages/insights.tsx:124
+msgid "Ler mais <0/>"
+msgstr "Read more <0/>"
+
+#: src/pages/docz.tsx:107
 msgid "Mais de 15 funcionalidades para o seu negócio"
-msgstr ""
+msgstr "More than 15 functionalities for your business"
 
-#: src/pages/docz.tsx:54
+#: src/pages/docz.tsx:71
 msgid "Mais evolução e agilidade no armazenamento e consulta aos seus documentos."
-msgstr ""
+msgstr "More evolution and agility in the storage and consultation of your documents."
 
-#: src/pages/index.tsx:185
-#: src/pages/index.tsx:199
-msgid ""
-"Mais organização e facilidade para você e sua empresa. Armazene seus arquivos\n"
-"físicos ou digitais em um local seguro de maneira organizada."
-msgstr ""
-
-#: src/pages/home.tsx:207
-#: src/pages/home.tsx:251
+#: src/pages/index.tsx:193
+#: src/pages/index.tsx:205
 msgid "Mais organização e facilidade para você e sua empresa. Armazene seus arquivos físicos ou digitais em um local seguro de maneira organizada."
-msgstr ""
+msgstr "More organization and ease for you and your company. Store your physical or digital files in a safe place in an organized way."
 
-#: src/pages/units.tsx:139
+#: src/pages/units.tsx:148
 msgid "Maletas anti-impacto, térmicas e resistentes ao fogo;"
-msgstr ""
+msgstr "Anti-impact, thermal and fire-resistant suitcases;"
 
-#: src/pages/about.tsx:130
+#: src/pages/about.tsx:296
 msgid "Missão"
-msgstr ""
+msgstr "Mission"
 
-#: src/pages/units.tsx:85
+#: src/pages/units.tsx:94
 msgid "Monitoramento de veículos e motoristas;"
+msgstr "Monitoring of vehicles and drivers;"
+
+#: src/pages/contact.tsx:106
+msgid "Nome da empresa*"
 msgstr ""
 
-#: src/pages/units.tsx:53
-#: src/pages/units.tsx:117
+#: src/pages/contact.tsx:64
+msgid "Nome*"
+msgstr ""
+
+#: src/components/ui/molecules/NavbarDropdown.tsx:22
+#: src/components/ui/organisms/Navbar.tsx:141
+msgid "Nossa história"
+msgstr "Our story"
+
+#: src/pages/units.tsx:62
+#: src/pages/units.tsx:126
 msgid "Nossas instalações estão localizadas nas principais rotas de distribuição, contando com modernas infraestruturas:"
-msgstr ""
+msgstr "Our facilities are located on the main distribution routes, with modern infrastructure:"
 
-#: src/pages/about.tsx:235
+#: src/pages/docz.tsx:76
+msgid "Nosso sistema é personalizado para você, navegue com segurança e tenha todas as informações sobre seus documentos com facilidade."
+msgstr "Our system is customized for you, browse safely and have all the information about your documents easily."
+
+#: src/pages/about.tsx:418
 msgid "Nossos clientes"
-msgstr ""
+msgstr "Our clients"
 
-#: src/pages/about.tsx:210
+#: src/pages/about.tsx:393
+#: src/pages/contact.tsx:131
 msgid "Nossos talentos individuais se complementam para criar algo muito maior."
-msgstr ""
+msgstr "Our individual talents complement each other to create something much greater."
 
-#: src/pages/docz.tsx:113
+#: src/pages/docz.tsx:136
 msgid "Ordem de Serviço Digital"
-msgstr ""
+msgstr "Digital Service Order"
 
-#: src/pages/docz.tsx:91
+#: src/pages/docz.tsx:114
 msgid "Painel de solicitações"
-msgstr ""
+msgstr "Request panel"
 
-#: src/pages/home.tsx:74
+#: src/pages/index.tsx:87
 msgid "Para <0>Governo</0>"
-msgstr ""
+msgstr "For <0>Government</0>"
 
-#: src/pages/index.tsx:210
-msgid ""
-"Para atingir todos os seus objetivos de negócio e crescer digitalmente com\n"
-"velocidade, você precisa do melhor em criatividade, performance e tecnologia."
-msgstr ""
-
-#: src/pages/home.tsx:305
-#: src/pages/insights.tsx:45
-#: src/pages/units.tsx:160
+#: src/pages/docz.tsx:213
+#: src/pages/index.tsx:251
+#: src/pages/insights.tsx:152
+#: src/pages/units.tsx:164
 msgid "Para atingir todos os seus objetivos de negócio e crescer digitalmente com velocidade, você precisa do melhor em criatividade, performance e tecnologia."
-msgstr ""
+msgstr "To achieve all your business goals and grow digitally with speed, you need the best in creativity, performance and technology."
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:30
 msgid "Paraguai"
 msgstr "Paraguay"
 
-#: src/pages/units.tsx:136
+#: src/pages/units.tsx:145
 msgid "Paredes resistentes a 1000°C;"
-msgstr ""
+msgstr "Walls resistant to 1000°C;"
 
-#: src/pages/about.tsx:167
+#: src/pages/about.tsx:333
 msgid "Pessoas em primeiro lugar;"
-msgstr ""
+msgstr "People first;"
 
-#: src/pages/docz.tsx:37
+#: src/pages/docz.tsx:50
 msgid "Planeje-se para as mudanças futuras com o DocZ, seus documentos seguros e você sempre a frente."
-msgstr ""
+msgstr "Plan for future changes with DocZ, your documents are secure and you're always ahead."
 
-#: src/pages/docz.tsx:51
+#: src/pages/docz.tsx:68
 msgid "Plataforma online"
-msgstr ""
+msgstr "Online platform"
 
-#: src/pages/docz.tsx:69
+#: src/pages/docz.tsx:92
 msgid "Plataforma única para Guarda e Gestão de documentos e Mídias"
-msgstr ""
+msgstr "Single platform for storing and managing documents and media"
 
 #: src/components/ui/organisms/Footer.tsx:137
 msgid "Podcast"
-msgstr ""
+msgstr "Podcast"
 
 #: src/components/ui/molecules/LocaleSwitcher.tsx:25
 msgid "Português"
 msgstr "Portuguese"
 
-#: src/pages/about.tsx:179
+#: src/pages/about.tsx:345
 msgid "Postura de dono."
-msgstr ""
+msgstr "Owner posture."
 
-#: src/pages/about.tsx:66
+#: src/pages/about.tsx:145
 msgid "Proximidade com nossos clientes"
-msgstr ""
+msgstr "Proximity to our customers"
 
-#: src/pages/about.tsx:173
+#: src/pages/about.tsx:339
 msgid "Proximidade com o cliente e foco em suas necessidades;"
-msgstr ""
+msgstr "Proximity to the customer and focus on their needs;"
 
-#: src/pages/about.tsx:232
+#: src/pages/about.tsx:415
 msgid "Quem confia"
-msgstr ""
+msgstr "Who trust"
 
-#: src/pages/about.tsx:38
+#: src/pages/about.tsx:117
 msgid "Quem somos"
-msgstr ""
-
-#: src/pages/docz.tsx:162
-msgid "Quer conhecer mais sobre o DocZ?"
-msgstr ""
-
-#: src/pages/home.tsx:66
-#: src/pages/index.tsx:72
-#: src/pages/index.tsx:93
-msgid "Quer o para a minha empresa"
-msgstr ""
-
-#: src/pages/docz.tsx:135
-msgid "Relatórios"
-msgstr ""
-
-#: src/pages/about.tsx:176
-msgid "Responsabilidade com os dados;"
-msgstr ""
-
-#: src/pages/about.tsx:74
-msgid "Responsabilidade com seus dados"
-msgstr ""
-
-#: src/pages/docz.tsx:199
-msgid "Saiba Mais"
-msgstr ""
-
-#: src/pages/home.tsx:302
-#: src/pages/index.tsx:209
-#: src/pages/insights.tsx:42
-#: src/pages/units.tsx:157
-msgid "Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio"
-msgstr ""
-
-#: src/pages/units.tsx:114
-msgid "Salas de mídias"
-msgstr ""
-
-#: src/pages/units.tsx:131
-msgid "Sistema de combate automático a incêndio através de gás (agente limpo);"
-msgstr ""
-
-#: src/pages/units.tsx:88
-msgid "Sistema de detecção precoce de incêndio."
-msgstr ""
-
-#: src/pages/units.tsx:79
-msgid "Sistema de para-raios;"
-msgstr ""
-
-#: src/components/ui/organisms/Footer.tsx:62
-msgid "Sobre nós"
-msgstr ""
-
-#: src/pages/docz.tsx:171
-msgid "Solicitar demonstração"
-msgstr ""
-
-#: src/components/ui/organisms/Footer.tsx:91
-msgid "Soluções"
-msgstr ""
-
-#: src/pages/home.tsx:126
-#: src/pages/index.tsx:130
-msgid "Somos uma empresa que apoia nossos clientes em seus negócios por meio de soluções inovadoras e tecnológicas voltadas para a gestão da informação."
-msgstr ""
-
-#: src/pages/about.tsx:207
-msgid "Somos únicos"
-msgstr ""
-
-#: src/pages/about.tsx:90
-msgid "Tecnologia e estrutura"
-msgstr ""
-
-#: src/pages/units.tsx:128
-msgid "Tecnologia para detecção antecipada de fumaça;"
-msgstr ""
+msgstr "Who we are"
 
 #: src/pages/docz.tsx:185
+msgid "Quer conhecer mais sobre o DocZ?"
+msgstr "Want to know more about DocZ?"
+
+#: src/pages/index.tsx:79
+msgid "Quero para a minha empresa"
+msgstr "I want for my company"
+
+#: src/pages/docz.tsx:158
+msgid "Relatórios"
+msgstr "Reports"
+
+#: src/pages/about.tsx:342
+msgid "Responsabilidade com os dados;"
+msgstr "Responsibility with the data;"
+
+#: src/pages/about.tsx:153
+msgid "Responsabilidade com seus dados"
+msgstr "Responsibility for your data"
+
+#: src/components/ui/organisms/Lgpd.tsx:43
+msgid "Saiba Mais"
+msgstr "Know more"
+
+#: src/pages/docz.tsx:212
+#: src/pages/index.tsx:250
+#: src/pages/insights.tsx:151
+#: src/pages/units.tsx:163
+msgid "Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio"
+msgstr "Find out how SOS Docs can help your business document management"
+
+#: src/pages/units.tsx:123
+msgid "Salas de mídias"
+msgstr "Media rooms"
+
+#: src/pages/units.tsx:140
+msgid "Sistema de combate automático a incêndio através de gás (agente limpo);"
+msgstr "Automatic fire fighting system using gas (clean agent);"
+
+#: src/pages/units.tsx:97
+msgid "Sistema de detecção precoce de incêndio."
+msgstr "Early fire detection system."
+
+#: src/pages/units.tsx:88
+msgid "Sistema de para-raios;"
+msgstr "Lightning arrester system;"
+
+#: src/components/ui/organisms/Footer.tsx:62
+#: src/components/ui/organisms/Navbar.tsx:78
+#: src/components/ui/organisms/Navbar.tsx:111
+msgid "Sobre nós"
+msgstr "About us"
+
+#: src/pages/docz.tsx:194
+msgid "Solicitar demonstração"
+msgstr "Request demo"
+
+#: src/pages/index.tsx:139
+msgid "Somos uma empresa que apoia nossos clientes em seus negócios por meio de soluções inovadoras e tecnológicas voltadas para a gestão da informação."
+msgstr "We are a company that supports our customers in their business through innovative and technological solutions aimed at information management."
+
+#: src/pages/about.tsx:390
+#: src/pages/contact.tsx:128
+msgid "Somos únicos"
+msgstr "We're unique"
+
+#: src/pages/about.tsx:169
+msgid "Tecnologia e estrutura"
+msgstr "Technology and structure"
+
+#: src/pages/units.tsx:137
+msgid "Tecnologia para detecção antecipada de fumaça;"
+msgstr "Technology for early detection of smoke;"
+
+#: src/pages/contact.tsx:92
+msgid "Telefone*"
+msgstr ""
+
+#: src/components/ui/organisms/Lgpd.tsx:27
 msgid "Temos um compromisso com a Lei Geral de Proteção de Dados Pessoais"
-msgstr ""
+msgstr "We are committed to the General Personal Data Protection Act"
 
-#: src/pages/units.tsx:125
+#: src/pages/units.tsx:134
 msgid "Temperatura e umidade controladas em conformidade com a ABNT 11515;"
-msgstr ""
+msgstr "Temperature and humidity controlled in accordance with ABNT 11515;"
 
-#: src/pages/about.tsx:150
+#: src/pages/about.tsx:316
 msgid "Tornar-se uma empresa referência de mercado na área de Tecnologia, Gestão e Guarda de documentos."
-msgstr ""
+msgstr "Become a market reference company in the area of Technology, Management and Document Guard."
 
+#: src/components/ui/molecules/NavbarDropdown.tsx:25
 #: src/components/ui/organisms/Footer.tsx:83
+#: src/components/ui/organisms/Navbar.tsx:150
 msgid "Trabalhe conosco"
-msgstr ""
+msgstr "Work with us"
 
-#: src/components/ui/organisms/Footer.tsx:111
-msgid "Transformação Digital"
-msgstr ""
-
-#: src/pages/home.tsx:53
-#: src/pages/home.tsx:226
-#: src/pages/index.tsx:59
-#: src/pages/index.tsx:80
-#: src/pages/index.tsx:191
+#: src/pages/index.tsx:66
+#: src/pages/index.tsx:198
 msgid "Transformação digital"
-msgstr ""
+msgstr "Digital transformation"
 
-#: src/pages/docz.tsx:145
+#: src/pages/docz.tsx:168
 msgid "Transporte"
-msgstr ""
+msgstr "Transport"
 
-#: src/components/ui/organisms/Footer.tsx:104
-msgid "Tratamento Documental"
-msgstr ""
-
-#: src/pages/index.tsx:184
+#: src/pages/index.tsx:192
 msgid "Tratamento documental"
-msgstr ""
+msgstr "Document treatment"
 
-#: src/pages/docz.tsx:34
+#: src/pages/docz.tsx:47
 msgid "Um sistema feito sob medida para você!"
-msgstr ""
+msgstr "A system tailored for you!"
 
-#: src/pages/about.tsx:82
+#: src/pages/about.tsx:92
+msgid "Uma das melhores empresas"
+msgstr "One of the best companies"
+
+#: src/pages/about.tsx:161
 msgid "Uma única plataforma para todos os serviços"
-msgstr ""
+msgstr "A single platform for all services"
 
+#: src/components/ui/molecules/NavbarDropdown.tsx:24
 #: src/components/ui/organisms/Footer.tsx:76
-#: src/pages/units.tsx:99
+#: src/components/ui/organisms/Navbar.tsx:147
+#: src/pages/units.tsx:108
 msgid "Unidades"
-msgstr ""
+msgstr "Units"
 
-#: src/pages/about.tsx:163
+#: src/pages/about.tsx:329
 msgid "Valores"
-msgstr ""
+msgstr "Values"
 
-#: src/pages/about.tsx:219
+#: src/pages/about.tsx:403
+#: src/pages/contact.tsx:144
 msgid "Veja nossas vagas abertas"
-msgstr ""
+msgstr "See our open positions"
 
 #: src/components/ui/organisms/Header.tsx:16
 msgid "Vendas"
 msgstr "Sales"
 
-#: src/pages/about.tsx:215
+#: src/pages/about.tsx:398
+#: src/pages/contact.tsx:136
 msgid "Venha criar o futuro com a gente!"
-msgstr ""
+msgstr "Come create the future with us!"
 
-#: src/pages/home.tsx:289
-msgid "Ver mais artigos"
-msgstr ""
-
-#: src/pages/units.tsx:73
+#: src/pages/units.tsx:82
 msgid "Vigilância especializada 24 horas com monitoramento;"
-msgstr ""
+msgstr "24-hour specialized surveillance with monitoring;"
 
-#: src/pages/about.tsx:147
+#: src/pages/about.tsx:313
 msgid "Visão"
-msgstr ""
+msgstr "Vision"
 
-#: src/pages/docz.tsx:148
+#: src/pages/docz.tsx:171
 msgid "Você está no controle, tenha o rastreamento em tempo real, desde o momento em que a caixa é coletada até o momento que ela é descarregada."
-msgstr ""
+msgstr "You are in control, have real-time tracking, from the moment the box is picked up until the moment it is unloaded."
 
 #: src/components/ui/organisms/Footer.tsx:144
 msgid "Webnário"
-msgstr ""
+msgstr "Webinar"
 
-#: src/pages/home.tsx:284
-msgid "Últimas publicações"
-msgstr ""
+#: src/pages/about.tsx:82
+msgid "líderes de segmento"
+msgstr "segment leaders"
+
+#: src/pages/about.tsx:95
+msgid "neste segmento para se trabalhar"
+msgstr "in this segment to work"
+
+#: src/components/ui/organisms/Navbar.tsx:244
+msgid "Área do cliente"
+msgstr "Customer's area"

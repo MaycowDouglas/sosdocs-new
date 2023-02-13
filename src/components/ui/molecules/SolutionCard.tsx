@@ -14,7 +14,7 @@ type Props = {
 
 export const SolutionCard = ({ href = '', icon, title, text }: Props) => (
   <Link href={href} legacyBehavior>
-    <a className="relative space-y-5 px-5 lg:px-10 xl:px-16 pb-24 pt-14 border-4 rounded-2xl border-primary-400 hover:border-yellow-500">
+    <a className="relative space-y-5 px-5 lg:px-10 xl:px-16 pb-24 pt-14 border-4 rounded-2xl border-primary-400 hover:border-secondary-100">
       <span className="inline-flex w-auto h-20 px-5 py-4 rounded-2xl bg-[#2981FE1A] ">{icon}</span>
 
       <Heading tag="h3" className="text-xl lg:text-2xl xl:text-3xl" dark>

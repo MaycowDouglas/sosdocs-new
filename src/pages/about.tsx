@@ -79,7 +79,7 @@ const AboutPage: NextPage = () => {
                         <Trans>+ de 100 clientes</Trans>
                       </Heading>
                       <Text color="lightMuted">
-                        <Trans>lideres de segmento</Trans>
+                        <Trans>líderes de segmento</Trans>
                       </Text>
                     </div>
                   </div>
@@ -174,7 +174,7 @@ const AboutPage: NextPage = () => {
         </Container>
       </section>
 
-      <section>
+      <section id="nossa-historia">
         <Container className="pb-20">
           <Content>
             <div>
@@ -279,7 +279,6 @@ const AboutPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-
       <section className="relative">
         <Image src={BgWeb} alt="" fill className="object-cover" />
         <Container className="py-20">
@@ -352,8 +351,7 @@ const AboutPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-
-      <section className="pt-14 pb-28">
+      <section id="certificados" className="pt-14 pb-28">
         <Container>
           <Content>
             <Heading dark className="text-4xl text-center mb-10">
@@ -379,7 +377,7 @@ const AboutPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-      <section className="bg-neutral-200">
+      <section id="trabalhe-conosco" className="bg-neutral-200">
         <Container className="py-20">
           <Content className="flex flex-col items-center gap-10 text-center lg:flex-row-reverse lg:items-start lg:text-left xl:items-center xl:gap-20">
             <div className="md:w-2/3 lg:w-1/2">
@@ -429,7 +427,7 @@ const AboutPage: NextPage = () => {
                       <Image
                         fill
                         className="object-contain object-center"
-                        src={client.brand.node.sourceUrl}
+                        src={client.featuredImage.node.sourceUrl}
                         alt={client.title}
                       />
                     </div>
@@ -440,7 +438,7 @@ const AboutPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-      <section>
+      <section id="unidades">
         <Container className="py-20">
           <Content>
             <div className="space-y-2 mb-7 md:mb-10">

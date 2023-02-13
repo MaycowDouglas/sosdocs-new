@@ -4,12 +4,13 @@ import { classNames } from '~/utils'
 
 type Props = {
   tag?: 'p' | 'address'
+  title?: string
   color?: 'dark' | 'light' | 'darkMuted' | 'lightMuted'
   children: ReactNode
   className?: string
 }
 
-export const Text = ({ tag = 'p', color = 'light', className = '', children }: Props) => {
+export const Text = ({ tag = 'p', color = 'light', className = '', children, title }: Props) => {
   const Tag = tag as keyof JSX.IntrinsicElements
 
   const colors = {
@@ -19,5 +20,9 @@ export const Text = ({ tag = 'p', color = 'light', className = '', children }: P
     lightMuted: 'text-slate-100',
   }
 
-  return <Tag className={classNames(colors[color], className)}>{children}</Tag>
+  return (
+    <Tag title={title} className={classNames(colors[color], className)}>
+      {children}
+    </Tag>
+  )
 }

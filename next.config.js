@@ -8,8 +8,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'sosdocs.com.br',
+        protocol: 'http',
+        hostname: 'blog.sosdocs.com.br',
       },
       {
         protocol: 'https',

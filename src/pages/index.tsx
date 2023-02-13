@@ -1,11 +1,13 @@
+// Import Swiper styles
 import 'swiper/css'
+import 'swiper/css/pagination'
 
 import { t, Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
-import { FaAngleDoubleRight } from 'react-icons/fa'
+import { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { TemplateDefault } from '~/components/templates/Default'
@@ -26,8 +28,6 @@ import { Cta } from '~/components/ui/organisms/Cta'
 import useClients from '~/hooks/useClients'
 import BgClients from '~/public/images/backgrounds/bg-clients.jpg'
 import BgHero from '~/public/images/backgrounds/bg-hero.jpg'
-import BgStorage from '~/public/images/backgrounds/bg-storage.jpg'
-import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
 import { classNames } from '~/utils'
 import { loadTranslation } from '~/utils/lingui'
 
@@ -43,6 +43,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 const IndexPage: NextPage = () => {
   const clients = useClients('public')
+
   return (
     <TemplateDefault title="" description="">
       <main className="relative">
@@ -75,7 +76,7 @@ const IndexPage: NextPage = () => {
                       'bg-secondary-300 text-white text-sm font-semibold '
                     )}
                   >
-                    <Trans>Quer o para a minha empresa</Trans>
+                    <Trans>Quero para a minha empresa</Trans>
                     <BsArrowRight className="text-xl text-primary-300 stroke-2" />
                   </a>
                 </Link>
@@ -83,10 +84,12 @@ const IndexPage: NextPage = () => {
               <div className="relative rounded-xl bg-neutral-210 overflow-hidden">
                 <div className="p-7 pb-8">
                   <Heading className="mb-2 text-xl">
-                    <Trans>Transformação digital</Trans>
+                    <Trans>
+                      Para <strong>Governo</strong>
+                    </Trans>
                   </Heading>
                   <Text className="mb-10">
-                    <Trans>Desenvolvemos soluções customizadas para o seu negocio.</Trans>
+                    <Trans>Gestão pública eficiente, transparente e digital!</Trans>
                   </Text>
                 </div>
                 <Link href="" legacyBehavior>
@@ -96,7 +99,7 @@ const IndexPage: NextPage = () => {
                       'bg-secondary-300 text-white text-sm font-semibold '
                     )}
                   >
-                    <Trans>Quer o para a minha empresa</Trans>
+                    <Trans>Atas de Registro</Trans>
                     <BsArrowRight className="text-xl text-primary-300 stroke-2" />
                   </a>
                 </Link>
@@ -181,29 +184,25 @@ const IndexPage: NextPage = () => {
                 href=""
                 icon={<MediaIcon />}
                 title={t`Guarda de documentos e mídias`}
-                text={t`Estrutura, sistemas e equipes altamente capacitadas para realizar a guarda de
-                documentos da sua empresa.`}
+                text={t`Estrutura, sistemas e equipes altamente capacitadas para realizar a guarda de documentos da sua empresa.`}
               />
               <SolutionCard
                 href=""
                 icon={<DocScanIcon />}
                 title={t`Tratamento documental`}
-                text={t`Mais organização e facilidade para você e sua empresa. Armazene seus arquivos
-                físicos ou digitais em um local seguro de maneira organizada.`}
+                text={t`Mais organização e facilidade para você e sua empresa. Armazene seus arquivos físicos ou digitais em um local seguro de maneira organizada.`}
               />
               <SolutionCard
                 href=""
                 icon={<CogTechIcon />}
                 title={t`Transformação digital`}
-                text={t`Desenvolvemos soluções customizadas para o seu negocio aplicando a metodo-
-                logia de ondas.`}
+                text={t`Desenvolvemos soluções customizadas para o seu negocio aplicando a metodologia de ondas.`}
               />
               <SolutionCard
                 href=""
                 icon={<BoardIcon />}
                 title={t`LGPD`}
-                text={t`Mais organização e facilidade para você e sua empresa. Armazene seus arquivos
-                físicos ou digitais em um local seguro de maneira organizada.`}
+                text={t`Mais organização e facilidade para você e sua empresa. Armazene seus arquivos físicos ou digitais em um local seguro de maneira organizada.`}
               />
             </div>
           </Content>
@@ -222,16 +221,20 @@ const IndexPage: NextPage = () => {
             </div>
 
             {clients.data && (
-              <Swiper spaceBetween={0} slidesPerView="auto">
+              <Swiper
+                modules={[Pagination]}
+                pagination={{ clickable: true }}
+                spaceBetween={0}
+                slidesPerView="auto"
+              >
                 {clients.data.map((client, index) => (
-                  <SwiperSlide key={index} className="max-w-[280px]">
-                    <div className="flex justify-center items-center">
+                  <SwiperSlide key={index} className="max-w-[280px] pb-14">
+                    <div className="relative h-[70px] w-full">
                       <Image
-                        src={client.brand.node.sourceUrl}
+                        fill
                         alt={client.title}
-                        width={150}
-                        height={90}
-                        className="w-auto h-[70px]"
+                        src={client.featuredImage.node.sourceUrl}
+                        className="object-contain object-center"
                       />
                     </div>
                   </SwiperSlide>
@@ -245,8 +248,7 @@ const IndexPage: NextPage = () => {
       <Cta
         href=""
         title={t`Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio`}
-        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com
-        velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
+        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
         call={t`Conheça a SOS Docs`}
       />
     </TemplateDefault>

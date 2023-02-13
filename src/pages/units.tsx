@@ -161,8 +161,7 @@ const UnitsPage: NextPage = () => {
       <Cta
         href=""
         title={t`Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio`}
-        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com
-        velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
+        text={t`Para atingir todos os seus objetivos de negócio e crescer digitalmente com velocidade, você precisa do melhor em criatividade, performance e tecnologia.`}
         call={t`Conheça a SOS Docs`}
       />
     </TemplateDefault>
