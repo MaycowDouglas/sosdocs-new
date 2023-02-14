@@ -291,35 +291,35 @@ export const UsersIcon = () => (
     <path
       d="M27.2272 14.925C27.1972 14.2428 27.3079 13.5618 27.5523 12.9242C27.7968 12.2866 28.1699 11.7061 28.6483 11.2189C29.1267 10.7316 29.7003 10.3481 30.3333 10.092C30.9663 9.83592 31.6453 9.71284 32.3279 9.73041C34.4759 9.73041 37.5187 11.0733 37.5187 14.835V19.4936"
       stroke="#120078"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <path
       d="M32.3275 10.3567C33.9091 10.3567 35.1912 9.07331 35.1912 7.49022C35.1912 5.90713 33.9091 4.62378 32.3275 4.62378C30.746 4.62378 29.4639 5.90713 29.4639 7.49022C29.4639 9.07331 30.746 10.3567 32.3275 10.3567Z"
       fill="white"
       stroke="#120078"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <path
       d="M12.0126 14.9252C12.0126 11.1624 9.05992 9.81902 6.82181 9.81902C6.13915 9.80153 5.4602 9.92468 4.82717 10.1808C4.19415 10.4369 3.62059 10.8206 3.14218 11.3079C2.66376 11.7951 2.29071 12.3756 2.04624 13.0133C1.80177 13.6509 1.6911 14.332 1.72112 15.0142V19.5838"
       stroke="#120078"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <path
       d="M6.82169 10.3567C8.40325 10.3567 9.68537 9.07331 9.68537 7.49022C9.68537 5.90713 8.40325 4.62378 6.82169 4.62378C5.24012 4.62378 3.95801 5.90713 3.95801 7.49022C3.95801 9.07331 5.24012 10.3567 6.82169 10.3567Z"
       fill="white"
       stroke="#120078"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <path
       d="M8.16455 24.4191C8.16455 15.9088 14.7872 12.7732 19.7099 12.7732C24.6326 12.7732 31.3415 15.8209 31.3415 24.3313"
       stroke="#0069FF"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <path
       d="M19.6201 13.9404C23.1787 13.9404 26.0636 11.0526 26.0636 7.49023C26.0636 3.92789 23.1787 1.04004 19.6201 1.04004C16.0614 1.04004 13.1765 3.92789 13.1765 7.49023C13.1765 11.0526 16.0614 13.9404 19.6201 13.9404Z"
       fill="white"
       stroke="#120078"
-      stroke-width="1.67915"
+      strokeWidth="1.67915"
     />
     <defs>
       <linearGradient
@@ -330,8 +330,8 @@ export const UsersIcon = () => (
         y2="22.3348"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0069FF" stop-opacity="0.4" />
-        <stop offset="1" stop-color="#0069FF" stop-opacity="0" />
+        <stop stopColor="#0069FF" stopOpacity="0.4" />
+        <stop offset="1" stopColor="#0069FF" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_7_1599"
@@ -341,8 +341,8 @@ export const UsersIcon = () => (
         y2="22.3359"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0069FF" stop-opacity="0.4" />
-        <stop offset="1" stop-color="#0069FF" stop-opacity="0" />
+        <stop stopColor="#0069FF" stopOpacity="0.4" />
+        <stop offset="1" stopColor="#0069FF" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_7_1599"
@@ -352,8 +352,8 @@ export const UsersIcon = () => (
         y2="24.3378"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0069FF" stop-opacity="0.4" />
-        <stop offset="1" stop-color="#0069FF" stop-opacity="0" />
+        <stop stopColor="#0069FF" stopOpacity="0.4" />
+        <stop offset="1" stopColor="#0069FF" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
@@ -402,8 +402,8 @@ export const ServerShield = () => (
         y2="33"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2981FE" stop-opacity="0.4" />
-        <stop offset="1" stop-color="#2981FE" stop-opacity="0" />
+        <stop stopColor="#2981FE" stopOpacity="0.4" />
+        <stop offset="1" stopColor="#2981FE" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

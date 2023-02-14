@@ -90,7 +90,7 @@ const InsightsPage: NextPage = () => {
           <Container className="py-20">
             <Content>
               <div>
-                <article className="grid grid-cols-3 gap-10 items-center">
+                <article className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
                   <div className="relative col-span-2 h-80 rounded-2xl overflow-hidden">
                     <Image
                       fill
@@ -110,7 +110,10 @@ const InsightsPage: NextPage = () => {
                     <Text color="darkMuted">
                       {posts.data[0].content?.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 115)}...
                     </Text>
-                    <Link href="" className="mt-5 inline-flex items-center gap-2 text-primary-200">
+                    <Link
+                      href={`/articles/${posts.data[0].slug}`}
+                      className="mt-5 inline-flex items-center gap-2 text-primary-200"
+                    >
                       <Trans>
                         Ler mais <FaChevronRight size={14} />
                       </Trans>
@@ -153,7 +156,7 @@ const InsightsPage: NextPage = () => {
                             {post.content?.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 60)}...
                           </Text>
                           <Link
-                            href=""
+                            href={`/articles/${post.slug}`}
                             className="mt-5 inline-flex items-center gap-2 text-primary-200"
                           >
                             <Trans>
