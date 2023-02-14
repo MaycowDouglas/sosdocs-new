@@ -84,3 +84,9 @@ export type PostsRouteResponse = ApiResponse & {
     }
   }
 }
+
+export type PostRouteResponse = ApiResponse & {
+  data: {
+    postBy: Post
+  }
+}

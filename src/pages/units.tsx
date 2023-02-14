@@ -2,6 +2,7 @@ import { t, Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import { FiMapPin } from 'react-icons/fi'
 
 import { TemplateDefault } from '~/components/templates/Default'
@@ -11,6 +12,7 @@ import { Heading } from '~/components/ui/atoms/Heading'
 import { Line } from '~/components/ui/atoms/Line'
 import { Text } from '~/components/ui/atoms/Text'
 import { Cta } from '~/components/ui/organisms/Cta'
+import useUnits from '~/hooks/useUnits'
 import BgPallets from '~/public/images/backgrounds/bg-pallets.jpg'
 import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
 import Infra from '~/public/images/infra.png'
@@ -28,6 +30,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 }
 
 const UnitsPage: NextPage = () => {
+  const units = useUnits()
   return (
     <TemplateDefault title="" description="">
       <main className="relative">
@@ -101,7 +104,56 @@ const UnitsPage: NextPage = () => {
           </Content>
         </Container>
       </section>
-      <section className="relative pt-14 pb-28">
+      <section id="unidades">
+        <Container className="py-20">
+          <Content>
+            <div className="space-y-2 mb-7 md:mb-10">
+              <Line />
+              <Heading dark className="text-3xl md:text-6xl">
+                <Trans>Conheça nossas unidades</Trans>
+              </Heading>
+            </div>
+
+            {units.data && (
+              <div className="grid md:grid-cols-3 gap-20 md:px-20 mt-20">
+                {units.data.map((unit, index) => (
+                  <article key={index}>
+                    <div className="relative w-full h-96">
+                      <div className="relative w-full h-full rounded-xl overflow-hidden shadow-xl">
+                        <Image
+                          fill
+                          className="object-cover object-center"
+                          alt={unit.title}
+                          src={unit.featuredImage.node.sourceUrl}
+                        />
+                      </div>
+                      <Link
+                        href={`/units/${unit.title
+                          .normalize('NFD')
+                          .replaceAll(' ', '-')
+                          .replace(/[\u0300-\u036f]/g, '')
+                          .toLocaleLowerCase()}`}
+                        className="z-0 absolute -bottom-6 left-1/2 -translate-x-1/2 p-5 rounded-full bg-white hover:bg-secondary-200 transition-all"
+                      >
+                        <FaMapMarkerAlt size={24} />
+                      </Link>
+                    </div>
+                    <div className="text-center mt-10">
+                      <Heading dark className="text-3xl">
+                        {unit.state}
+                      </Heading>
+                      <Text color="darkMuted" className="text-xl">
+                        {unit.city}
+                      </Text>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
+          </Content>
+        </Container>
+      </section>
+      {/* <section className="relative pt-14 pb-28">
         <div className="container">
           <div className="px-16">
             <h2 className="flex items-end leading-none gap-2 text-4xl font-semibold text-primary-400">
@@ -109,7 +161,7 @@ const UnitsPage: NextPage = () => {
             </h2>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <Container className="py-20">
           <Content className="flex flex-col items-center gap-10 text-center lg:flex-row-reverse lg:items-start lg:text-left xl:items-center xl:gap-20">

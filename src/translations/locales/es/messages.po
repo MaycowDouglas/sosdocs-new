@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/about.tsx:79
+#: src/pages/about.tsx:92
 msgid "+ de 100 clientes"
 msgstr "+ de 100 clientes"
 
@@ -50,10 +50,10 @@ msgid "/sobre-nos#trabalhe-conosco"
 msgstr "/sobre-nosotros#trabaja-con-nosotros"
 
 #: src/components/ui/organisms/Navbar.tsx:146
-msgid "/sobre-nos#unidades"
-msgstr "/sobre-nosotros#units"
+msgid "/unidades"
+msgstr ""
 
-#: src/pages/about.tsx:122
+#: src/pages/about.tsx:136
 msgid "A SOS Docs foi fundada em 2011 com o propósito de oferecer serviços relacionados à Tecnologia e Gestão da Informação."
 msgstr "SOS Docs fue fundada en 2011 con el propósito de ofrecer servicios relacionados con la Gestión y Tecnologías de la Información."
 
@@ -61,7 +61,7 @@ msgstr "SOS Docs fue fundada en 2011 con el propósito de ofrecer servicios rela
 msgid "A melhor solução para o seu negócio"
 msgstr "La mejor solución para tu negocio"
 
-#: src/pages/about.tsx:336
+#: src/pages/about.tsx:350
 msgid "A transformação começa por nós;"
 msgstr "La transformación comienza con nosotros;"
 
@@ -69,7 +69,7 @@ msgstr "La transformación comienza con nosotros;"
 msgid "Acelerar o processo de transformação de pessoas e informações é o nosso propósito"
 msgstr "Acelerar el proceso de transformación de las personas y la información es nuestro propósito"
 
-#: src/pages/units.tsx:151
+#: src/pages/units.tsx:203
 msgid "Acesso restrito a área de armazenamento por biometria;"
 msgstr "Acceso restringido al área de almacenamiento por biometría;"
 
@@ -93,7 +93,7 @@ msgstr "Minutas de Registro"
 msgid "Blog"
 msgstr "Blog"
 
-#: src/pages/units.tsx:79
+#: src/pages/units.tsx:82
 msgid "Bombeiro Civil;"
 msgstr "Bombero civil;"
 
@@ -101,7 +101,7 @@ msgstr "Bombero civil;"
 msgid "Brasil"
 msgstr "Brasil"
 
-#: src/pages/units.tsx:91
+#: src/pages/units.tsx:94
 msgid "CFTV – Câmeras de circuito interno;"
 msgstr "CCTV – Cámaras de circuito interno;"
 
@@ -115,11 +115,11 @@ msgstr "Cases"
 msgid "Central de atendimento"
 msgstr "Central de atendimiento"
 
-#: src/pages/units.tsx:70
+#: src/pages/units.tsx:73
 msgid "Certificações de acordo com a legislação vigente;"
 msgstr "Certificaciones de acuerdo con la legislación vigente;"
 
-#: src/pages/about.tsx:128
+#: src/pages/about.tsx:142
 msgid "Com o passar dos anos, buscando realizar serviços de qualidade e eficiência, a SOS Docs vem aumentando sua base de clientes de maneira sólida, constante e em sintonia com as atualizações de produtos e tecnologia. Conta atualmente com mais de 500 colaboradores e operação em todo Brasil e no Paraguai, além da sua capacidade aprovada por mais de 100 clientes."
 msgstr "A lo largo de los años, buscando brindar servicios eficientes y de calidad, SOS Docs ha ido aumentando su base de clientes de manera sólida, constante y en línea con las actualizaciones de productos y tecnologías. Actualmente cuenta con más de 500 empleados y operaciones en todo Brasil y Paraguay, además de su capacidad aprobada por más de 100 clientes."
 
@@ -138,8 +138,8 @@ msgstr "Conocer SOSDocs"
 #: src/pages/docz.tsx:214
 #: src/pages/index.tsx:156
 #: src/pages/index.tsx:252
-#: src/pages/insights.tsx:153
-#: src/pages/units.tsx:165
+#: src/pages/insights.tsx:188
+#: src/pages/units.tsx:217
 msgid "Conheça a SOS Docs"
 msgstr "Conozca SOS Docs"
 
@@ -148,21 +148,22 @@ msgid "Conheça abaixo os serviços que oferecemos, nossos produtos e casos de s
 msgstr "Descubra a continuación los servicios que ofrecemos, nuestros productos y casos de éxito."
 
 #: src/components/ui/organisms/Navbar.tsx:122
-#: src/pages/about.tsx:184
+#: src/pages/about.tsx:198
 msgid "Conheça nossa história"
 msgstr "Conoce nuestra historia"
 
-#: src/pages/about.tsx:358
+#: src/pages/about.tsx:372
 msgid "Conheça nossas certificações:"
 msgstr "Descubra nuestras certificaciones:"
 
-#: src/pages/about.tsx:447
-#: src/pages/units.tsx:43
+#: src/pages/about.tsx:461
+#: src/pages/units.tsx:46
+#: src/pages/units.tsx:113
 msgid "Conheça nossas unidades"
 msgstr "Descubre nuestras unidades"
 
 #: src/components/ui/organisms/Navbar.tsx:125
-#: src/pages/about.tsx:187
+#: src/pages/about.tsx:201
 msgid "Conheça os passos dados pela SOS Docs desde seu surgimento até hoje."
 msgstr "Conoce los pasos que ha dado SOS Docs desde sus inicios hasta hoy."
 
@@ -172,15 +173,15 @@ msgstr "Contacto"
 
 #: src/components/ui/organisms/Footer.tsx:124
 #: src/components/ui/organisms/Navbar.tsx:226
-#: src/pages/insights.tsx:47
+#: src/pages/insights.tsx:48
 msgid "Conteúdo"
 msgstr "Contenido"
 
-#: src/pages/units.tsx:154
+#: src/pages/units.tsx:206
 msgid "Contingência por geradores e nobreaks."
 msgstr "Contingencia para generadores y UPS."
 
-#: src/pages/units.tsx:76
+#: src/pages/units.tsx:79
 msgid "Controle de pragas;"
 msgstr "Control de plagas;"
 
@@ -192,7 +193,7 @@ msgstr "Desarrollamos soluciones a medida para tu negocio aplicando la metodolog
 msgid "Desenvolvemos soluções customizadas para o seu negocio."
 msgstr "Desarrollamos soluciones a medida para su negocio."
 
-#: src/pages/units.tsx:85
+#: src/pages/units.tsx:88
 msgid "Detector de intrusos com alarmes;"
 msgstr "Detector de intrusión con alarmas;"
 
@@ -228,15 +229,15 @@ msgstr "Esta Ley (Ley N° 13.709) prevé el tratamiento de datos personales, inc
 msgid "Estados Unidos"
 msgstr "Estados Unidos"
 
-#: src/pages/about.tsx:65
+#: src/pages/about.tsx:78
 msgid "Estamos preparados para atender em todo o Brasil. Temos unidades para Guarda e Tratamento documental nos seguintes estados: Rio de Janeiro; São Paulo; Espírito Santo; Bahia e no Distrito Federal."
 msgstr "Estamos preparados para servir en todo Brasil. Contamos con unidades de custodia y procesamiento de documentos en los siguientes estados: Río de Janeiro; San Pablo; Espíritu Santo; Bahía y el Distrito Federal."
 
-#: src/pages/about.tsx:62
+#: src/pages/about.tsx:75
 msgid "Estamos presentes em todo o Brasil e no Paraguai"
 msgstr "Estamos presentes en todo Brasil y Paraguay"
 
-#: src/pages/units.tsx:73
+#: src/pages/units.tsx:76
 msgid "Estantes em aço;"
 msgstr "Estantes de acero;"
 
@@ -248,7 +249,7 @@ msgstr "¡Estructura, sistemas y equipos altamente calificados al servicio de su
 msgid "Estrutura, sistemas e equipes altamente capacitadas para realizar a guarda de documentos da sua empresa."
 msgstr "Estructura, sistemas y equipos altamente calificados para salvaguardar los documentos de su empresa."
 
-#: src/pages/about.tsx:299
+#: src/pages/about.tsx:313
 msgid "Evoluir diariamente de acordo com as tecnologias de mercado, proporcionando aos nossos clientes satisfação na implantação de todo processo da gestão documental e guarda de documentos."
 msgstr "Evolucionar diariamente de acuerdo a las tecnologías del mercado, brindando a nuestros clientes satisfacción en la implementación de todo el proceso de gestión documental y almacenamiento de documentos."
 
@@ -276,7 +277,7 @@ msgstr "Home"
 msgid "Implemente processos tecnológicos à gestão da informação no seu negócio."
 msgstr "Implementar procesos tecnológicos para la gestión de la información en su negocio."
 
-#: src/pages/units.tsx:59
+#: src/pages/units.tsx:62
 msgid "Infraestrutura"
 msgstr "Infraestructura"
 
@@ -292,8 +293,8 @@ msgstr "Infraestructura"
 msgid "LGPD"
 msgstr "LGPD"
 
-#: src/pages/insights.tsx:79
-#: src/pages/insights.tsx:124
+#: src/pages/insights.tsx:114
+#: src/pages/insights.tsx:159
 msgid "Ler mais <0/>"
 msgstr "Leer más <0/>"
 
@@ -310,15 +311,15 @@ msgstr "Más evolución y agilidad en el almacenamiento y consulta de sus docume
 msgid "Mais organização e facilidade para você e sua empresa. Armazene seus arquivos físicos ou digitais em um local seguro de maneira organizada."
 msgstr "Más organización y facilidad para usted y su empresa. Guarda tus archivos físicos o digitales en un lugar seguro de forma organizada."
 
-#: src/pages/units.tsx:148
+#: src/pages/units.tsx:200
 msgid "Maletas anti-impacto, térmicas e resistentes ao fogo;"
 msgstr "Maletas anti-impacto, térmicas y resistentes al fuego;"
 
-#: src/pages/about.tsx:296
+#: src/pages/about.tsx:310
 msgid "Missão"
 msgstr "Misión"
 
-#: src/pages/units.tsx:94
+#: src/pages/units.tsx:97
 msgid "Monitoramento de veículos e motoristas;"
 msgstr "Vigilancia de vehículos y conductores;"
 
@@ -335,8 +336,8 @@ msgstr ""
 msgid "Nossa história"
 msgstr "Nuestra historia"
 
-#: src/pages/units.tsx:62
-#: src/pages/units.tsx:126
+#: src/pages/units.tsx:65
+#: src/pages/units.tsx:178
 msgid "Nossas instalações estão localizadas nas principais rotas de distribuição, contando com modernas infraestruturas:"
 msgstr "Nuestras instalaciones se encuentran ubicadas en las principales rutas de distribución, contando con una moderna infraestructura:"
 
@@ -344,11 +345,11 @@ msgstr "Nuestras instalaciones se encuentran ubicadas en las principales rutas d
 msgid "Nosso sistema é personalizado para você, navegue com segurança e tenha todas as informações sobre seus documentos com facilidade."
 msgstr "Nuestro sistema está personalizado para ti, navega con seguridad y ten toda la información de tus documentos fácilmente."
 
-#: src/pages/about.tsx:418
+#: src/pages/about.tsx:432
 msgid "Nossos clientes"
 msgstr "Nuestros clientes"
 
-#: src/pages/about.tsx:393
+#: src/pages/about.tsx:407
 #: src/pages/contact.tsx:131
 msgid "Nossos talentos individuais se complementam para criar algo muito maior."
 msgstr "Nuestros talentos individuales se complementan entre sí para crear algo mucho más grande."
@@ -367,8 +368,8 @@ msgstr "Para <0>Gobierno</0>"
 
 #: src/pages/docz.tsx:213
 #: src/pages/index.tsx:251
-#: src/pages/insights.tsx:152
-#: src/pages/units.tsx:164
+#: src/pages/insights.tsx:187
+#: src/pages/units.tsx:216
 msgid "Para atingir todos os seus objetivos de negócio e crescer digitalmente com velocidade, você precisa do melhor em criatividade, performance e tecnologia."
 msgstr "Para lograr todos sus objetivos comerciales y crecer digitalmente con rapidez, necesita lo mejor en creatividad, rendimiento y tecnología."
 
@@ -376,11 +377,15 @@ msgstr "Para lograr todos sus objetivos comerciales y crecer digitalmente con ra
 msgid "Paraguai"
 msgstr "Paraguay"
 
-#: src/pages/units.tsx:145
+#: src/pages/units.tsx:197
 msgid "Paredes resistentes a 1000°C;"
 msgstr "Paredes resistentes a 1000°C;"
 
-#: src/pages/about.tsx:333
+#: src/pages/insights.tsx:56
+msgid "Pesquisar Conteúdo"
+msgstr ""
+
+#: src/pages/about.tsx:347
 msgid "Pessoas em primeiro lugar;"
 msgstr "La gente primero;"
 
@@ -404,23 +409,23 @@ msgstr "Podcast"
 msgid "Português"
 msgstr "Portugués"
 
-#: src/pages/about.tsx:345
+#: src/pages/about.tsx:359
 msgid "Postura de dono."
 msgstr "Postura del propietario."
 
-#: src/pages/about.tsx:145
+#: src/pages/about.tsx:159
 msgid "Proximidade com nossos clientes"
 msgstr "Proximidad a nuestros clientes"
 
-#: src/pages/about.tsx:339
+#: src/pages/about.tsx:353
 msgid "Proximidade com o cliente e foco em suas necessidades;"
 msgstr "Proximidad al cliente y foco en sus necesidades;"
 
-#: src/pages/about.tsx:415
+#: src/pages/about.tsx:429
 msgid "Quem confia"
 msgstr "Quien confía"
 
-#: src/pages/about.tsx:117
+#: src/pages/about.tsx:131
 msgid "Quem somos"
 msgstr "Quienes somos"
 
@@ -436,11 +441,11 @@ msgstr "Quiero para mi empresa"
 msgid "Relatórios"
 msgstr "Informes"
 
-#: src/pages/about.tsx:342
+#: src/pages/about.tsx:356
 msgid "Responsabilidade com os dados;"
 msgstr "Responsabilidad con los datos;"
 
-#: src/pages/about.tsx:153
+#: src/pages/about.tsx:167
 msgid "Responsabilidade com seus dados"
 msgstr "Responsabilidad de sus datos"
 
@@ -450,24 +455,24 @@ msgstr "Sepa mas"
 
 #: src/pages/docz.tsx:212
 #: src/pages/index.tsx:250
-#: src/pages/insights.tsx:151
-#: src/pages/units.tsx:163
+#: src/pages/insights.tsx:186
+#: src/pages/units.tsx:215
 msgid "Saiba como a SOS Docs pode auxiliar a gestão documental do seu negócio"
 msgstr "Descubra cómo SOS Docs puede ayudar a la gestión de documentos de su empresa"
 
-#: src/pages/units.tsx:123
+#: src/pages/units.tsx:175
 msgid "Salas de mídias"
 msgstr "Salas de prensa"
 
-#: src/pages/units.tsx:140
+#: src/pages/units.tsx:192
 msgid "Sistema de combate automático a incêndio através de gás (agente limpo);"
 msgstr "Sistema automático de extinción de incendios mediante gas (agente limpio);"
 
-#: src/pages/units.tsx:97
+#: src/pages/units.tsx:100
 msgid "Sistema de detecção precoce de incêndio."
 msgstr "Sistema de detección temprana de incendios."
 
-#: src/pages/units.tsx:88
+#: src/pages/units.tsx:91
 msgid "Sistema de para-raios;"
 msgstr "Sistema pararrayos;"
 
@@ -485,16 +490,16 @@ msgstr "Solicitar demostración"
 msgid "Somos uma empresa que apoia nossos clientes em seus negócios por meio de soluções inovadoras e tecnológicas voltadas para a gestão da informação."
 msgstr "Somos una empresa que apoya a nuestros clientes en sus negocios a través de soluciones innovadoras y tecnológicas orientadas a la gestión de la información."
 
-#: src/pages/about.tsx:390
+#: src/pages/about.tsx:404
 #: src/pages/contact.tsx:128
 msgid "Somos únicos"
 msgstr "Somos únicos"
 
-#: src/pages/about.tsx:169
+#: src/pages/about.tsx:183
 msgid "Tecnologia e estrutura"
 msgstr "Tecnología y estructura"
 
-#: src/pages/units.tsx:137
+#: src/pages/units.tsx:189
 msgid "Tecnologia para detecção antecipada de fumaça;"
 msgstr "Tecnología para la detección temprana de humo;"
 
@@ -506,11 +511,11 @@ msgstr ""
 msgid "Temos um compromisso com a Lei Geral de Proteção de Dados Pessoais"
 msgstr "Estamos comprometidos con la Ley General de Protección de Datos de Carácter Personal"
 
-#: src/pages/units.tsx:134
+#: src/pages/units.tsx:186
 msgid "Temperatura e umidade controladas em conformidade com a ABNT 11515;"
 msgstr "Temperatura y humedad controladas de acuerdo con ABNT 11515;"
 
-#: src/pages/about.tsx:316
+#: src/pages/about.tsx:330
 msgid "Tornar-se uma empresa referência de mercado na área de Tecnologia, Gestão e Guarda de documentos."
 msgstr "Convertirnos en una empresa de referencia en el mercado en el área de Tecnología, Gestión y Custodia Documental."
 
@@ -537,26 +542,25 @@ msgstr "Tratamiento de documentos"
 msgid "Um sistema feito sob medida para você!"
 msgstr "¡Un sistema a tu medida!"
 
-#: src/pages/about.tsx:92
+#: src/pages/about.tsx:105
 msgid "Uma das melhores empresas"
 msgstr "Una de las mejores empresas."
 
-#: src/pages/about.tsx:161
+#: src/pages/about.tsx:175
 msgid "Uma única plataforma para todos os serviços"
 msgstr "Una única plataforma para todos los servicios"
 
 #: src/components/ui/molecules/NavbarDropdown.tsx:24
 #: src/components/ui/organisms/Footer.tsx:76
 #: src/components/ui/organisms/Navbar.tsx:147
-#: src/pages/units.tsx:108
 msgid "Unidades"
 msgstr "Unidades"
 
-#: src/pages/about.tsx:329
+#: src/pages/about.tsx:343
 msgid "Valores"
 msgstr "Valores"
 
-#: src/pages/about.tsx:403
+#: src/pages/about.tsx:417
 #: src/pages/contact.tsx:144
 msgid "Veja nossas vagas abertas"
 msgstr "Vea nuestras posiciones abiertas"
@@ -565,16 +569,16 @@ msgstr "Vea nuestras posiciones abiertas"
 msgid "Vendas"
 msgstr "Ventas"
 
-#: src/pages/about.tsx:398
+#: src/pages/about.tsx:412
 #: src/pages/contact.tsx:136
 msgid "Venha criar o futuro com a gente!"
 msgstr "¡Ven a crear el futuro con nosotros!"
 
-#: src/pages/units.tsx:82
+#: src/pages/units.tsx:85
 msgid "Vigilância especializada 24 horas com monitoramento;"
 msgstr "Vigilancia especializada las 24 horas con monitoreo;"
 
-#: src/pages/about.tsx:313
+#: src/pages/about.tsx:327
 msgid "Visão"
 msgstr "Visión"
 
@@ -586,11 +590,11 @@ msgstr "Usted tiene el control, tiene un seguimiento en tiempo real, desde el mo
 msgid "Webnário"
 msgstr "Webnário"
 
-#: src/pages/about.tsx:82
+#: src/pages/about.tsx:95
 msgid "líderes de segmento"
 msgstr "líderes de segmento"
 
-#: src/pages/about.tsx:95
+#: src/pages/about.tsx:108
 msgid "neste segmento para se trabalhar"
 msgstr "en este segmento para trabajar"
 

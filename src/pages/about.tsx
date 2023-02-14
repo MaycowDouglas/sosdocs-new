@@ -4,7 +4,7 @@ import { Trans } from '@lingui/macro'
 import type { GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaPlus } from 'react-icons/fa'
+import { FaMapMarked, FaMapMarkedAlt, FaMapMarkerAlt, FaMapPin, FaPlus } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { TemplateDefault } from '~/components/templates/Default'
@@ -17,7 +17,8 @@ import { Text } from '~/components/ui/atoms/Text'
 import useCertificates from '~/hooks/useCertificates'
 import useClients from '~/hooks/useClients'
 import useUnits from '~/hooks/useUnits'
-import BgHero from '~/public/images/backgrounds/bg-hero-about.png'
+import BgAboutUs from '~/public/images/backgrounds/bg-about-us.png'
+import BgBrazil from '~/public/images/backgrounds/bg-brazil.jpg'
 import BgWeb from '~/public/images/backgrounds/bg-web.jpg'
 import CoupleLookingTablet from '~/public/images/couple-looking-tablet.jpg'
 import ManSmilingLookingTablet from '~/public/images/man-smiling-looking-tablet.jpg'
@@ -41,67 +42,80 @@ const AboutPage: NextPage = () => {
 
   return (
     <TemplateDefault title="" description="">
-      <section className="relative bg-primary-300">
-        <Container className="pt-28 pb-20 md:pt-32 xl:pt-36 xl:pb-28">
-          <Content className="pt-14">
-            <div className="text-center space-y-3 md:w-2/3 md:mx-auto lg:w-3/4">
-              <p className="text-secondary-300 uppercase">Sobre nós</p>
-              <Heading className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
-                Com mais de 20 anos de experiência e tecnologia
-              </Heading>
-              <Text color="lightMuted" className="lg:text-xl">
-                Acelerar o processo de transformação de pessoas e informações é o nosso propósito.
-              </Text>
-            </div>
+      <div className="bg-primary-300">
+        <section className="relative bg-primary-300">
+          <Container className="pt-28 md:pt-32 xl:pt-36 ">
+            <Content className="pt-14">
+              <div className="text-center space-y-3 md:w-2/3 md:mx-auto lg:w-3/4">
+                <p className="text-secondary-300 uppercase">Sobre nós</p>
+                <Heading className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+                  Com mais de 20 anos de experiência e tecnologia
+                </Heading>
+                <Text color="lightMuted" className="lg:text-xl">
+                  Acelerar o processo de transformação de pessoas e informações é o nosso propósito.
+                </Text>
+              </div>
+            </Content>
+          </Container>
+        </section>
 
-            <div className="mt-14 xl:pt-20">
-              <div className="text-center lg:text-left lg:w-2/3 xl:w-5/12">
-                <div className="space-y-2 xl:space-y-4 md:w-2/3 md:mx-auto lg:w-full">
-                  <Line />
-                  <Heading tag="h1" className="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-                    <Trans>Estamos presentes em todo o Brasil e no Paraguai</Trans>
-                  </Heading>
-                  <Text>
-                    <Trans>
-                      Estamos preparados para atender em todo o Brasil. Temos unidades para Guarda e
-                      Tratamento documental nos seguintes estados: Rio de Janeiro; São Paulo;
-                      Espírito Santo; Bahia e no Distrito Federal.
-                    </Trans>
-                  </Text>
-                </div>
-                <div className="pt-10 flex flex-col md:grid md:grid-cols-2 gap-5">
-                  <div className="p-4 md:p-8 flex flex-col gap-4 items-center lg:items-start border border-neutral-250 rounded-lg">
-                    <div className="w-16 h-14 p-3 rounded-xl text-secondary-300 bg-[linear-gradient(90deg,_rgba(254,_203,_54,_0.32)_0%,_rgba(254,_203,_54,_0.0736)_100%)]">
-                      <RocketIcon />
-                    </div>
-                    <div className="space-y-2">
-                      <Heading>
-                        <Trans>+ de 100 clientes</Trans>
-                      </Heading>
-                      <Text color="lightMuted">
-                        <Trans>líderes de segmento</Trans>
-                      </Text>
-                    </div>
+        <section className="relative bg-primary-300 pb-20 xl:pb-28">
+          <Image
+            src={BgBrazil}
+            className="absolute right-0 bottom-0 w-full object-cover object-center"
+            alt=""
+          />
+          <Container>
+            <Content>
+              <div className="mt-14 xl:pt-20 relative">
+                <div className="text-center lg:text-left lg:w-2/3 xl:w-5/12">
+                  <div className="space-y-2 xl:space-y-4 md:w-2/3 md:mx-auto lg:w-full">
+                    <Line />
+                    <Heading tag="h1" className="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+                      <Trans>Estamos presentes em todo o Brasil e no Paraguai</Trans>
+                    </Heading>
+                    <Text>
+                      <Trans>
+                        Estamos preparados para atender em todo o Brasil. Temos unidades para Guarda
+                        e Tratamento documental nos seguintes estados: Rio de Janeiro; São Paulo;
+                        Espírito Santo; Bahia e no Distrito Federal.
+                      </Trans>
+                    </Text>
                   </div>
-                  <div className="p-4 md:p-8 flex flex-col gap-4 items-center lg:items-start border border-neutral-250 rounded-lg">
-                    <div className="w-16 h-14 p-3 rounded-xl text-secondary-300 bg-[linear-gradient(90deg,_rgba(254,_203,_54,_0.32)_0%,_rgba(254,_203,_54,_0.0736)_100%)]">
-                      <RocketIcon />
+                  <div className="pt-10 flex flex-col md:grid md:grid-cols-2 gap-5">
+                    <div className="p-4 md:p-8 flex flex-col gap-4 items-center lg:items-start border border-neutral-250 rounded-lg">
+                      <div className="w-16 h-14 p-3 rounded-xl text-secondary-300 bg-[linear-gradient(90deg,_rgba(254,_203,_54,_0.32)_0%,_rgba(254,_203,_54,_0.0736)_100%)]">
+                        <RocketIcon />
+                      </div>
+                      <div className="space-y-2">
+                        <Heading>
+                          <Trans>+ de 100 clientes</Trans>
+                        </Heading>
+                        <Text color="lightMuted">
+                          <Trans>líderes de segmento</Trans>
+                        </Text>
+                      </div>
                     </div>
-                    <div className="space-y-2">
-                      <Heading>
-                        <Trans>Uma das melhores empresas</Trans>
-                      </Heading>
-                      <Text color="lightMuted">
-                        <Trans>neste segmento para se trabalhar</Trans>
-                      </Text>
+                    <div className="p-4 md:p-8 flex flex-col gap-4 items-center lg:items-start border border-neutral-250 rounded-lg">
+                      <div className="w-16 h-14 p-3 rounded-xl text-secondary-300 bg-[linear-gradient(90deg,_rgba(254,_203,_54,_0.32)_0%,_rgba(254,_203,_54,_0.0736)_100%)]">
+                        <RocketIcon />
+                      </div>
+                      <div className="space-y-2">
+                        <Heading>
+                          <Trans>Uma das melhores empresas</Trans>
+                        </Heading>
+                        <Text color="lightMuted">
+                          <Trans>neste segmento para se trabalhar</Trans>
+                        </Text>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Content>
-        </Container>
-      </section>
+            </Content>
+          </Container>
+        </section>
+      </div>
 
       <section>
         <Container className="py-20">
@@ -449,7 +463,7 @@ const AboutPage: NextPage = () => {
             </div>
 
             {units.data && (
-              <div className="grid md:grid-cols-3 gap-20 md:px-20">
+              <div className="grid md:grid-cols-3 gap-20 md:px-20 mt-20">
                 {units.data.map((unit, index) => (
                   <article key={index}>
                     <div className="relative w-full h-96">
@@ -469,7 +483,7 @@ const AboutPage: NextPage = () => {
                           .toLocaleLowerCase()}`}
                         className="z-0 absolute -bottom-6 left-1/2 -translate-x-1/2 p-5 rounded-full bg-white hover:bg-secondary-200 transition-all"
                       >
-                        <FaPlus />
+                        <FaMapMarkerAlt size={24} />
                       </Link>
                     </div>
                     <div className="text-center mt-10">

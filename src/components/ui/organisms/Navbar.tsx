@@ -7,7 +7,7 @@ import { FiChevronDown } from 'react-icons/fi'
 import { classNames } from '~/utils'
 
 import { Heading } from '../atoms/Heading'
-import { MediaIcon } from '../atoms/Icons'
+import { CogTechIcon, MediaIcon, Pin, ServerShield, UsersIcon } from '../atoms/Icons'
 import { IconText } from '../atoms/IconText'
 import { NavbarBrand } from '../atoms/NavbarBrand'
 import { NavbarCollapse } from '../atoms/NavbarCollapse'
@@ -113,7 +113,7 @@ export const Navbar = ({ active = false }: Props) => {
               </span>
               <span
                 className={classNames(
-                  'z-0 absolute top-10 left-5 right-5 grid grid-cols-12 h-0 group-hover:h-auto hover:h-auto pt-4',
+                  'z-0 absolute top-10 left-5 right-5 grid grid-cols-12 h-0 group-hover:h-auto hover:h-auto group-hover:pt-4 hover:pt-4',
                   'rounded-b-xl bg-transparent overflow-hidden'
                 )}
               >
@@ -138,16 +138,16 @@ export const Navbar = ({ active = false }: Props) => {
 
                 <span className="grid grid-cols-4 place-content-center col-span-7 p-20 bg-white">
                   <Link href="/about#our-history" as={t`/sobre-nos#nossa-historia`}>
-                    <IconText icon={<MediaIcon />} text={t`Nossa história`} />
+                    <IconText icon={<UsersIcon />} text={t`Nossa história`} />
                   </Link>
                   <Link href="/about#cases" as={t`/sobre-nos#cases`}>
-                    <IconText icon={<MediaIcon />} text={t`Cases`} />
+                    <IconText icon={<ServerShield />} text={t`Cases`} />
                   </Link>
-                  <Link href="/about#units" as={t`/sobre-nos#unidades`}>
-                    <IconText icon={<MediaIcon />} text={t`Unidades`} />
+                  <Link href="/units" as={t`/unidades`}>
+                    <IconText icon={<Pin />} text={t`Unidades`} />
                   </Link>
                   <Link href="/about#work-with-us" as={t`/sobre-nos#trabalhe-conosco`}>
-                    <IconText icon={<MediaIcon />} text={t`Trabalhe conosco`} />
+                    <IconText icon={<CogTechIcon />} text={t`Trabalhe conosco`} />
                   </Link>
                 </span>
               </span>
