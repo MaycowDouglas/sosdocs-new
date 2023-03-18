@@ -11,7 +11,13 @@ import { TemplateDefault } from '~/components/templates/Default'
 import { Container } from '~/components/ui/atoms/Container'
 import { Content } from '~/components/ui/atoms/Content'
 import { Heading } from '~/components/ui/atoms/Heading'
-import { MediaIcon, RocketIcon } from '~/components/ui/atoms/Icons'
+import {
+  CogTechIcon,
+  MediaIcon,
+  RocketIcon,
+  ServerShield,
+  UsersIcon,
+} from '~/components/ui/atoms/Icons'
 import { Line } from '~/components/ui/atoms/Line'
 import { Text } from '~/components/ui/atoms/Text'
 import useCertificates from '~/hooks/useCertificates'
@@ -153,7 +159,7 @@ const AboutPage: NextPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-20 mt-10 xl:mt-20">
               <div className="flex items-center gap-5 lg:flex-col lg:items-start">
                 <span className="inline-flex w-1/4 lg:w-20 px-5 py-4 rounded-2xl bg-[#2981FE1A] ">
-                  <MediaIcon />
+                  <UsersIcon />
                 </span>
                 <Text color="darkMuted" className="w-3/4 lg:w-full">
                   <Trans>Proximidade com nossos clientes</Trans>
@@ -161,7 +167,7 @@ const AboutPage: NextPage = () => {
               </div>
               <div className="flex items-center gap-5 lg:flex-col lg:items-start">
                 <span className="inline-flex w-1/4 lg:w-20 px-5 py-4 rounded-2xl bg-[#2981FE1A] ">
-                  <MediaIcon />
+                  <ServerShield />
                 </span>
                 <Text color="darkMuted" className="w-3/4 lg:w-full">
                   <Trans>Responsabilidade com seus dados</Trans>
@@ -177,7 +183,7 @@ const AboutPage: NextPage = () => {
               </div>
               <div className="flex items-center gap-5 lg:flex-col lg:items-start">
                 <span className="inline-flex w-1/4 lg:w-20 px-5 py-4 rounded-2xl bg-[#2981FE1A] ">
-                  <MediaIcon />
+                  <CogTechIcon />
                 </span>
                 <Text color="darkMuted" className="w-3/4 lg:w-full">
                   <Trans>Tecnologia e estrutura</Trans>
